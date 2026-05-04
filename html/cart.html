@@ -1,0 +1,70 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سلة المشتريات</title>
+    <link rel="stylesheet" href="../css/kitchen.css">
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+        rel="stylesheet">
+</head>
+<body>
+<nav id="nav">
+    <a href="#" class="nav-logo">GME</a>
+    
+  <ul class="nav-links">
+    <li class="nav-item-dropdown">
+      <a href="index.html" class="nav-dropdown-trigger">
+        Shops <span class="nav-caret"><i class="ri-arrow-drop-down-line"></i></span>
+      </a>
+      <ul class="nav-dropdown">
+        <li><a href="Clothes1.html">Clothes</a></li>
+        <li><a href="foodcourt.html">Food</a></li>
+        <li><a href="main-cosmetics.html">Cosmetics</a></li>
+        <li><a href="cinema.html">Entertainment</a></li>
+        <li><a href="#">Kitchen</a></li>
+      </ul>
+    </li>
+    <li><a href="../html/index.html">Home</a></li>
+    <li><a href="#">Contact us</a></li>
+  </ul>
+
+  <!--Theme control-->
+  <div class="nav-right">
+    <button class="theme-toggle" onclick="ThemeToggle()" id="themeToggle" aria-label="Toggle theme" title="Toggle light / dark mode">
+      <i class="ri-moon-fill" id="dark-mode-icon"></i>
+      <i class="ri-moon-line" id="light-mode-icon"></i>
+    </button>
+    <button class="login/register" onclick="LoginToggle()" id="login/register" title="login/register">
+      <em style="border-bottom: 2px solid var(--gold); font-style: italic;">LOGIN</em>
+    </button>
+  </div>
+</nav>
+
+    <div class="cart-container">
+        <h2>مشترياتك الحالية</h2>
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>المنتج</th>
+                    <th>السعر</th>
+                    <th>الكمية</th>
+                    <th>الإجمالي</th>
+                </tr>
+            </thead>
+            <tbody id="cart-body">
+                </tbody>
+        </table>
+
+        <div class="cart-total">
+            الإجمالي النهائي: <span id="total-price">0 EGP</span>
+        </div>
+
+        <button class="checkout-btn" onclick="alert('شكراً لثقتك! تم تنفيذ طلبك بنجاح'); clearCart();">إتمام الشراء (Finish) ✅</button>
+    </div>
+
+<script src="../js/kitchen.js"></script>
+<script src="../js/kitchen-2.js"></script>
+</body>
+</html>

@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GME | Furniture</title>
+    <link rel="stylesheet" href="../css/furniture.css">
+    <link rel="stylesheet" href="../css/main-cart.css">
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+        rel="stylesheet">
+</head>
+<body>
+<nav id="nav">
+    <a href="index.html" class="nav-logo">GME</a>
+    
+  <ul class="nav-links">
+    <li class="nav-item-dropdown">
+      <a href="index.html" class="nav-dropdown-trigger">
+        Shops <span class="nav-caret"><i class="ri-arrow-drop-down-line"></i></span>
+      </a>
+      <ul class="nav-dropdown">
+        <li><a href="Clothes1.html">Clothes</a></li>
+        <li><a href="foodcourt.html">Food</a></li>
+        <li><a href="main-cosmetics.html">Cosmetics</a></li>
+        <li><a href="cinema.html">Entertainment</a></li>
+        <li><a href="kitchen-main.html">Kitchen</a></li>
+        <li><a href="furniture.html">Furniture</a></li>
+      </ul>
+    </li>
+    <li><a href="../html/index.html">Home</a></li>
+    <li><a href="contact-us.html">Contact us</a></li>
+  </ul>
+
+  <!--Theme control-->
+  <div class="nav-right">
+    <button class="theme-toggle" onclick="ThemeToggle()" id="themeToggle" aria-label="Toggle theme" title="Toggle light / dark mode">
+      <i class="ri-moon-fill" id="dark-mode-icon"></i>
+      <i class="ri-moon-line" id="light-mode-icon"></i>
+    </button>
+    <button class="login/register" onclick="LoginToggle()" id="login/register" title="login/register">
+      <em style="border-bottom: 2px solid var(--gold); font-style: italic;">LOGIN</em>
+    </button>
+  </div>
+</nav>
+
+    <header>
+        <h1>Modern Nest</h1>
+        <p>EXCLUSIVE 75 PIECE COLLECTION</p>
+    </header>
+
+    <div class="nav2">
+        <a href="#living">Living Room</a>
+        <a href="#bedroom">Bedroom</a>
+        <a href="#office">Home Office</a>
+        <a href="#lighting">Lighting</a>
+        <a href="#decor">Art & Decor</a>
+    </div>
+
+    <div class="container">
+
+        <!-- LIVING ROOM (15 PRODUCTS) -->
+        <section id="living">
+            <h2>Living Room</h2>
+        <div class="row">
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/1.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Emerald Velvet Sofa</h>
+                        <br><br>
+                        <b class="price">45,000 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/2.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Oak Coffee Table</h>
+                        <br><br>
+                        <b class="price">12,500 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/3.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Luxe Sectional Sofa</h>
+                        <br><br>
+                        <b class="price"></b>52,000 EGP </b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/4.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Nordic Armchair</h>
+                        <br><br>
+                        <b class="price">14,200 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/5.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Walnut Side Table</h>
+                        <br><br>
+                        <b class="price">8,900 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/6.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Leather Club Chair</h>
+                        <br><br>
+                        <b class="price">19,500 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/7.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Modern Media Console</h>
+                        <br><br>
+                        <b class="price">21,000 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/8.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Urban Fabric Sofa</h>
+                        <br><br>
+                        <b class="price">38,000 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/9.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Wall Art Unit</h>
+                        <br><br>
+                        <b class="price">11,200 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/10.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Round Velvet Pouf</h>
+                        <br><br>
+                        <b class="price">4,500 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/11.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Decorative Console</h>
+                        <br><br>
+                        <b class="price">15,600 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/12.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Chaise Lounge</h>
+                        <br><br>
+                        <b class="price">29,000 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/13.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Accent Marble Table</h>
+                        <br><br>
+                        <b class="price">7,400 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/14.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Modern Sideboard</h>
+                        <br><br>
+                        <b class="price">23,000 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/15.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Classic Wingback</h>
+                        <br><br>
+                        <b class="price">13,800 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- BEDROOM (15 PRODUCTS) -->
+        <section id="bedroom">
+            <h2>Bedroom</h2>
+        <div class="row">
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/16.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                    <h3 class="product-name">King Bed Frame</h>
+                        <br><br>
+                        <b class="price">42,000 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/17.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Oak Nightstand</h>
+                        <br><br>
+                        <b class="price">5,800 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/18.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Walk-in Wardrobe</h>
+                        <br><br>
+                        <b class="price">65,000 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/19.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Minimalist Vanity</h>
+                        <br><br>
+                        <b class="price">18,500 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/20.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Upholstered Headboard</h>
+                        <br><br>
+                        <b class="price">12,000 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/21.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Full Length Mirror</h>
+                        <br><br>
+                        <b class="price">5,200 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/22.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Modern Chest of Drawers</h>
+                        <br><br>
+                        <b class="price">22,000 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/23.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Linens Luxury Set</h>
+                        <br><br>
+                        <b class="price">7,500 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/24.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Single Studio Bed</h>
+                        <br><br>
+                        <b class="price">26,000 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/25.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Sliding Closet</h>
+                        <br><br>
+                        <b class="price">54,000 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/26.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Premium Mattress</h>
+                        <br><br>
+                        <b class="price">15,000 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/27.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Bedroom Bench</h>
+                        <br><br>
+                        <b class="price">9,400 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/28.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Contemporary Bed</h>
+                        <br><br>
+                        <b class="price">38,500 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/29.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Fireside Bedroom Chair</h>
+                        <br><br>
+                        <b class="price">11,000 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/30.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Minimal Bed Set</h>
+                        <br><br>
+                        <b class="price">41,000 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- HOME OFFICE (15 PRODUCTS) -->
+        <section id="office">
+            <h2>Home Office</h2>
+        <div class="row">
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/31.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Executive Walnut Desk</h>
+                        <br><br>
+                        <b class="price">28,000 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/32.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Ergonomic Office Chair</h>
+                        <br><br>
+                        <b class="price">14,500 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/33.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Industrial Bookshelf</h>
+                        <br><br>
+                        <b class="price">16,000 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/34.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">LED Architect Lamp</h>
+                        <br><br>
+                        <b class="price">3,200 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/35.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Glass Work Desk</h>
+                        <br><br>
+                        <b class="price">24,000 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/36.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Modern File Cabinet</h>
+                        <br><br>
+                        <b class="price">8,500 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/37.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Mesh Task Chair</h>
+                        <br><br>
+                        <b class="price">7,800 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/38.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Leather Desk Pad</h>
+                        <br><br>
+                        <b class="price">1,500 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/39.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Meeting Table</h>
+                        <br><br>
+                        <b class="price">35,000 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/40.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Premium table</h>
+                        <br><br>
+                        <b class="price">2899</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/41.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Corner Office Desk</h>
+                        <br><br>
+                        <b class="price">32,000 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/42.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Wood Monitor Stand</h>
+                        <br><br>
+                        <b class="price">2,400 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/43.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Office Wall Shelf</h>
+                        <br><br>
+                        <b class="price">4,100 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/44.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Laptop Desk</h>
+                        <br><br>
+                        <b class="price">9,800 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        </section>
+
+        <!-- LUXURY LIGHTING (15 PRODUCTS) -->
+        <section id="lighting">
+            <h2>Luxury Lighting</h2>
+        <div class="row">
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/45.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Modern Chandelier</h>
+                        <br><br>
+                        <b class="price">28,000 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/46.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Industrial Pendant</h>
+                        <br><br>
+                        <b class="price">3,500 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/47.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Sphere Floor Lamp</h>
+                        <br><br>
+                        <b class="price">7,200 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/48.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Golden Bedside Lamp</h>
+                        <br><br>
+                        <b class="price">2,900 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/49.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Glass Ceiling Light</h>
+                        <br><br>
+                        <b class="price">14,000 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/50.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Modern Wall Sconce</h>
+                        <br><br>
+                        <b class="price">4,600 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/51.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name"></h>Bar Light
+                        <br><br>
+                        <b class="price">9,500 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/52.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Cylinder Pendant</h>
+                        <br><br>
+                        <b class="price">4,200 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/53.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Smart Mood Light</h>
+                        <br><br>
+                        <b class="price">6,100 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/54.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Art Deco Chandelier</h>
+                        <br><br>
+                        <b class="price">35,000 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/55.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Natural Boho Lamp</h>
+                        <br><br>
+                        <b class="price">5,800 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/56.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Neon Linear Lamp</h>
+                        <br><br>
+                        <b class="price">8,200 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/57.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Corner Aura Glow</h>
+                        <br><br>
+                        <b class="price">4,900 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/58.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Studio Track Light</h>
+                        <br><br>
+                        <b class="price">12,000 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/59.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Luxe Desk Light</h>
+                        <br><br>
+                        <b class="price">5,200 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>   
+        </section>
+        <!-- ART & DECOR (15 PRODUCTS) -->
+        <section id="decor">
+            <h2>Art & Decor</h2>
+        <div class="row">
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/60.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Ceramic Vase Trio</h>
+                        <br><br>
+                        <b class="price">2,500 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/61.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Gold Sunburst Mirror</h>
+                        <br><br>
+                        <b class="price">8,900 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/62.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Decorative Gold Tray</h>
+                        <br><br>
+                        <b class="price">1,800 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/63.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Indoor Planter Set</h>
+                        <br><br>
+                        <b class="price">2,500 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="row">
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/64.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Luxury Candle Trio</h>
+                        <br><br>
+                        <b class="price">1,900 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/65.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Marble Bookends</h>
+                        <br><br>
+                        <b class="price">3,800 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/66.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Silver Photo Frame</h>
+                        <br><br>
+                        <b class="price">1,200 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/67.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Round Oak Clock</h>
+                        <br><br>
+                        <b class="price">3,100 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="row">
+            <div class="container">
+                <img src="../assets/images/furniture-images/furniture-images/68.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Premium Art Print</h>
+                        <br><br>
+                        <b class="price">4,200 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="images/69.jpg" alt="Product">
+                <div class="box-read">
+                    <div class="product-info"><br>
+                        <h3 class="product-name">Hand-blown Glass Vase</h>
+                        <br><br>
+                        <b class="price">6,800 EGP</b><br><br>
+                        <button class="add-btn"onclick="buy(this)">add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        </section>
+    </div>
+
+         <!-- ── Cart trigger (floating button) ─────────────────── -->
+  <button id="cart-trigger" onclick="openCart()">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+      <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+    </svg>
+    Cart
+    <span id="cart-trigger-count">0</span>
+  </button>
+
+  <!-- ── Overlay ─────────────────────────────────────────── -->
+  <div id="cart-overlay" onclick="closeCart()"></div>
+
+  <!-- ── Drawer ──────────────────────────────────────────── -->
+  <div id="cart-drawer" role="dialog" aria-label="Shopping cart">
+    <div class="cart-drawer-header">
+      <span class="cart-drawer-title">
+        Shopping cart
+        <span class="cart-drawer-badge" id="drawer-badge">0</span>
+      </span>
+      <button class="cart-close-btn" onclick="closeCart()" aria-label="Close cart">&#x2715;</button>
+    </div>
+
+    <div class="cart-drawer-body" id="cart-body">
+      <!-- Populated by JS -->
+    </div>
+
+    <div class="cart-drawer-footer">
+      <button class="checkout-btn" id="checkout-btn" disabled onclick="handleCheckout()">
+        Proceed to checkout
+      </button>
+      <button class="continue-btn" onclick="closeCart()">Continue shopping</button>
+    </div>
+  </div>
+
+  <!-- ── Toast ───────────────────────────────────────────── -->
+  <div id="cart-toast">
+    <span class="toast-dot"></span>
+    <span id="cart-toast-msg">Added to cart</span>
+  </div>
+
+   <script src="../js/controls.js"></script>
+   <script src="../js/cart-system.js"></script>
+    <script src="../js/furniture.js"></script><script src="auth.js"></script>
+    
+</body>
+</html>

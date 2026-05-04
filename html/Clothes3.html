@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GME | Clothing</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="../css/Clothes.css">
+        <link rel="stylesheet" href="../css/main-cart.css">
+        <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+        rel="stylesheet">
+    </head>
+    <body>
+
+
+<nav id="nav">
+    <a href="index.html" class="nav-logo">GME</a>
+    
+  <ul class="nav-links">
+    <li class="nav-item-dropdown">
+      <a href="index.html" class="nav-dropdown-trigger">
+        Shops <span class="nav-caret"><i class="ri-arrow-drop-down-line"></i></span>
+      </a>
+      <ul class="nav-dropdown">
+        <li><a href="Clothes1.html">Clothes</a></li>
+        <li><a href="foodcourt.html">Food</a></li>
+        <li><a href="main-cosmetics.html">Cosmetics</a></li>
+        <li><a href="cinema.html">Entertainment</a></li>
+        <li><a href="kitchen-main.html">Kitchen</a></li>
+        <li><a href="furniture.html">Furniture</a></li>
+      </ul>
+    </li>
+    <li><a href="../html/index.html">Home</a></li>
+    <li><a href="contact-us.html">Contact us</a></li>
+  </ul>
+
+  <!--Theme control-->
+  <div class="nav-right">
+    <button class="theme-toggle" onclick="ThemeToggle()" id="themeToggle" aria-label="Toggle theme" title="Toggle light / dark mode">
+      <i class="ri-moon-fill" id="dark-mode-icon"></i>
+      <i class="ri-moon-line" id="light-mode-icon"></i>
+    </button>
+    <button class="login/register" onclick="LoginToggle()" id="login/register" title="login/register">
+      <em style="border-bottom: 2px solid var(--gold); font-style: italic;">LOGIN</em>
+    </button>
+  </div>
+</nav>
+
+ <div class="space"></div>
+    <button class="back-btn" onclick="BackToggle()" id="back-btn">
+        <i class="ri-arrow-left-s-line"></i>
+    </button>
+
+        <div class="row">
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\1.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:160$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\2.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:170$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\3.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:200$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\4.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:130$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\5.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:150$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+        <div class="row">
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\6.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:160$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\7.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:170$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\8.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:200$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\9.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:130$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\10.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:150$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+        <div class="row">
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\11.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:160$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\12.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:170$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\13.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:200$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\14.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:130$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\15.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:150$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+        <div class="row">
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\16.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:160$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\17.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:170$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\18.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:200$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\19.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:130$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\20.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:150$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+        <div class="row">
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\21.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:160$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\22.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:170$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\23.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:200$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\24.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:130$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\25.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:150$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+        <div class="row">
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\26.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:160$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\27.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:170$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\28.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:200$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\29.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:130$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\30.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:150$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+        <div class="row">
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\31.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:160$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\32.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:170$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\33.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:200$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\34.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:130$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\35.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:150$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+        <div class="row">
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\36.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:160$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\37.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:170$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\38.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:200$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\39.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:130$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\40.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:150$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+        <div class="row">
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\41.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:160$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\42.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:170$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\43.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:200$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\44.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:130$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\45.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:150$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+        <div class="row">
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\46.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:160$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\47.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:170$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\48.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:200$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\49.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:130$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\50.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:150$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+        <div class="row">
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\51.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:160$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\52.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:170$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\53.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:200$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\54.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:130$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\55.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:150$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+        <div class="row">
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\56.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:160$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\57.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:170$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <img src="..\assets\images\clothes-images\female\58.jpg" alt="Product">
+            <div class="box-read">
+                <div class="size-collector">
+                    <label for="size">size</label>
+                    <select class="proud-size">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+                </div>
+                <div class="product-info"><br>
+                    <b class="price">the price:200$</b><br>
+                    <span class="num-edi">Number of pieces: <b class="min-js">5</b></span><br><br>
+                    <button class="add-btn"onclick="buy(this)">ADD</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+<!-- ── Cart trigger (floating button) ─────────────────── -->
+  <button id="cart-trigger" onclick="openCart()">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+      <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+    </svg>
+    Cart
+    <span id="cart-trigger-count">0</span>
+  </button>
+
+  <!-- ── Overlay ─────────────────────────────────────────── -->
+  <div id="cart-overlay" onclick="closeCart()"></div>
+
+  <!-- ── Drawer ──────────────────────────────────────────── -->
+  <div id="cart-drawer" role="dialog" aria-label="Shopping cart">
+    <div class="cart-drawer-header">
+      <span class="cart-drawer-title">
+        Shopping cart
+        <span class="cart-drawer-badge" id="drawer-badge">0</span>
+      </span>
+      <button class="cart-close-btn" onclick="closeCart()" aria-label="Close cart">&#x2715;</button>
+    </div>
+
+    <div class="cart-drawer-body" id="cart-body">
+      <!-- Populated by JS -->
+    </div>
+
+    <div class="cart-drawer-footer">
+      <button class="checkout-btn" id="checkout-btn" disabled onclick="handleCheckout()">
+        Proceed to checkout
+      </button>
+      <button class="continue-btn" onclick="closeCart()">Continue shopping</button>
+    </div>
+  </div>
+
+  <!-- ── Toast ───────────────────────────────────────────── -->
+  <div id="cart-toast">
+    <span class="toast-dot"></span>
+    <span id="cart-toast-msg">Added to cart</span>
+  </div>
+
+    <script src="../js/controls.js"></script>
+    <script src="../js/cart-system.js"></script>
+    <script src="../js/Clothes.js"></script><script src="auth.js"></script>
+    </body>
+</html>

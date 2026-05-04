@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GME | Cosmetics</title>
+        <link rel="stylesheet" href="../css/main-cart.css">
+    <link rel="stylesheet" href="../css/cosmetics.css">
+        <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+</head>
+<body>
+
+    <header class="brand-header">
+<nav id="nav">
+    <a href="index.html" class="nav-logo">GME</a>
+    
+  <ul class="nav-links">
+    <li class="nav-item-dropdown">
+      <a href="index.html" class="nav-dropdown-trigger">
+        Shops <span class="nav-caret"><i class="ri-arrow-drop-down-line"></i></span>
+      </a>
+      <ul class="nav-dropdown">
+        <li><a href="Clothes1.html">Clothes</a></li>
+        <li><a href="foodcourt.html">Food</a></li>
+        <li><a href="main-cosmetics.html">Cosmetics</a></li>
+        <li><a href="cinema.html">Entertainment</a></li>
+        <li><a href="kitchen-main.html">Kitchen</a></li>
+        <li><a href="furniture.html">Furniture</a></li>
+      </ul>
+    </li>
+    <li><a href="../html/index.html">Home</a></li>
+    <li><a href="contact-us.html">Contact us</a></li>
+  </ul>
+
+  <!--Theme control-->
+  <div class="nav-right">
+    <button class="theme-toggle" onclick="ThemeToggle()" id="themeToggle" aria-label="Toggle theme" title="Toggle light / dark mode">
+      <i class="ri-moon-fill" id="dark-mode-icon"></i>
+      <i class="ri-moon-line" id="light-mode-icon"></i>
+    </button>
+    <button class="login/register" onclick="LoginToggle()" id="login/register" title="login/register">
+      <em style="border-bottom: 2px solid var(--gold); font-style: italic;">LOGIN</em>
+    </button>
+  </div>
+</nav>
+        <div class="header-content">
+            <h1 class="collection-title">olaplex Collection</h1>
+        </div>
+    </header>
+    <button class="back-btn" onclick="BackToggle()" id="back-btn">
+        <i class="ri-arrow-left-s-line"></i>
+    </button>
+
+    <div class="perfume-grid">
+    <div class="perfume-card">
+        <img src="../assets/images/cosmetics-images/ol1.jpg" alt="Olaplex 3">
+        <h3>Olaplex Hair Perfector No.3</h3>
+        <p>علاج منزلي يعمل على إصلاح وتقوية الشعر من الداخل إلى الخارج.</p>
+        <div class="price">2880 EGP</div>
+        <span class="num-edi">Stock: <b class="min-js">5</b></span>
+        <button class="buy-btn" onclick="buy(this)">Add to Cart</button>
+    </div>
+    <div class="perfume-card">
+        <img src="../assets/images/cosmetics-images/ol2.jpg" alt="Yitee">
+        <h3>Yitee - WIND COMFORT serum</h3>
+        <p>سيروم مهدئ ومريح للبشرة، مصمم لتوفير إحساس بالبرودة.</p>
+        <div class="price">1200 EGP</div>
+        <span class="num-edi">Stock: <b class="min-js">3</b></span>
+        <button class="buy-btn" onclick="buy(this)">Add to Cart</button>
+    </div>
+    <div class="perfume-card">
+        <img src="../assets/images/cosmetics-images/ol3.jpg" alt="the heal">
+        <h3>the heal - biomimetics LEAVE-IN CREAM</h3>
+        <p>كريم مغذٍ يُترك على الشعر مصمم خصيصاً لإصلاح الشعر التالف.</p>
+        <div class="price">1050 EGP</div>
+        <span class="num-edi">Stock: <b class="min-js">6</b></span>
+        <button class="buy-btn" onclick="buy(this)">Add to Cart</button>
+    </div>
+    <div class="perfume-card">
+        <img src="../assets/images/cosmetics-images/ol4.jpg" alt="Rosia">
+        <h3>Rosia - LINGERIE WASH</h3>
+        <p>سائل غسيل مخصص للملابس الحساسة.</p>
+        <div class="price">820 EGP</div>
+        <span class="num-edi">Stock: <b class="min-js">4</b></span>
+        <button class="buy-btn" onclick="buy(this)">Add to Cart</button>
+    </div>
+    <div class="perfume-card">
+        <img src="../assets/images/cosmetics-images/ol5.jpg" alt="BT Cherry">
+        <h3>BT Cherry Blossom - Beauty Cream</h3>
+        <p>كريم مرطب للوجه (Hidratante Facial).</p>
+        <div class="price">860 EGP</div>
+        <span class="num-edi">Stock: <b class="min-js">7</b></span>
+        <button class="buy-btn" onclick="buy(this)">Add to Cart</button>
+    </div>
+    <div class="perfume-card">
+        <img src="../assets/images/cosmetics-images/ol6.jpg" alt="Innisfree">
+        <h3>Innisfree Brightening Serum</h3>
+        <p>يعمل على تفتيح البشرة وترطيبها بفضل مادة البيتين.</p>
+        <div class="price">1620 EGP</div>
+        <span class="num-edi">Stock: <b class="min-js">5</b></span>
+        <button class="buy-btn" onclick="buy(this)">Add to Cart</button>
+    </div>
+    <div class="perfume-card">
+        <img src="../assets/images/cosmetics-images/ol7.jpg" alt="Anua">
+        <h3>Anua - PEACH 70 NIACIN SERUM</h3>
+        <p>سيروم مغذٍ يهدف إلى تحسين نضارة البشرة وجعلها أكثر حيوية.</p>
+        <div class="price">1350 EGP</div>
+        <span class="num-edi">Stock: <b class="min-js">3</b></span>
+        <button class="buy-btn" onclick="buy(this)">Add to Cart</button>
+    </div>
+    <div class="perfume-card">
+        <img src="../assets/images/cosmetics-images/ol8.jpg" alt="Coco & Eve">
+        <h3>Coco & Eve Shampoo & Conditioner</h3>
+        <p>شامبو وبلسم لزيادة حجم الشعر وتنظيفه بلطف.</p>
+        <div class="price">2880 EGP</div>
+        <span class="num-edi">Stock: <b class="min-js">2</b></span>
+        <button class="buy-btn" onclick="buy(this)">Add to Cart</button>
+    </div>
+</div>
+<!-- ── Cart trigger (floating button) ─────────────────── -->
+  <button id="cart-trigger" onclick="openCart()">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+      <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+    </svg>
+    Cart
+    <span id="cart-trigger-count">0</span>
+  </button>
+
+  <!-- ── Overlay ─────────────────────────────────────────── -->
+  <div id="cart-overlay" onclick="closeCart()"></div>
+
+  <!-- ── Drawer ──────────────────────────────────────────── -->
+  <div id="cart-drawer" role="dialog" aria-label="Shopping cart">
+    <div class="cart-drawer-header">
+      <span class="cart-drawer-title">
+        Shopping cart
+        <span class="cart-drawer-badge" id="drawer-badge">0</span>
+      </span>
+      <button class="cart-close-btn" onclick="closeCart()" aria-label="Close cart">&#x2715;</button>
+    </div>
+
+    <div class="cart-drawer-body" id="cart-body">
+      <!-- Populated by JS -->
+    </div>
+
+    <div class="cart-drawer-footer">
+      <button class="checkout-btn" id="checkout-btn" disabled onclick="handleCheckout()">
+        Proceed to checkout
+      </button>
+      <button class="continue-btn" onclick="closeCart()">Continue shopping</button>
+    </div>
+  </div>
+
+  <!-- ── Toast ───────────────────────────────────────────── -->
+  <div id="cart-toast">
+    <span class="toast-dot"></span>
+    <span id="cart-toast-msg">Added to cart</span>
+  </div>
+
+    <script src="../js/cart-system.js"></script>
+    <script src="../js/controls.js"></script><script src="auth.js"></script>
+</body>
+</html>

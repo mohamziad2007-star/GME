@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GME</title>
+   <link rel="stylesheet" href="../css/Electrical appliances-style.css">
+   <link rel="stylesheet" href="../css/main-cart.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet">
+</head>
+
+<body>
+<nav id="nav">
+    <a href="index.html" class="nav-logo">GME</a>
+    
+  <ul class="nav-links">
+    <li class="nav-item-dropdown">
+      <a href="index.html" class="nav-dropdown-trigger">
+        Shops <span class="nav-caret"><i class="ri-arrow-drop-down-line"></i></span>
+      </a>
+      <ul class="nav-dropdown">
+        <li><a href="Clothes1.html">Clothes</a></li>
+        <li><a href="foodcourt.html">Food</a></li>
+        <li><a href="main-cosmetics.html">Cosmetics</a></li>
+        <li><a href="cinema.html">Entertainment</a></li>
+        <li><a href="kitchen-main.html">Kitchen</a></li>
+        <li><a href="furniture.html">Furniture</a></li>
+      </ul>
+    </li>
+    <li><a href="../html/index.html">Home</a></li>
+    <li><a href="contact-us.html">Contact us</a></li>
+  </ul>
+
+  <!--Theme control-->
+  <div class="nav-right">
+    <button class="theme-toggle" onclick="ThemeToggle()" id="themeToggle" aria-label="Toggle theme" title="Toggle light / dark mode">
+      <i class="ri-moon-fill" id="dark-mode-icon"></i>
+      <i class="ri-moon-line" id="light-mode-icon"></i>
+    </button>
+    <button class="login/register" onclick="LoginToggle()" id="login/register" title="login/register">
+      <em style="border-bottom: 2px solid var(--gold); font-style: italic;">LOGIN</em>
+    </button>
+  </div>
+</nav>
+
+ <div class="main">
+   <div class="cardvid">
+      <video autoplay muted loop playsinline><source src="..\assets\images\appliances-images\devphoto\devphoto\page-phonezline.mp4" type="video/mp4"></video>
+    </div>
+    <div class="cardvid">
+       <video autoplay muted loop playsinline><source src="..\assets\videos\appliances-videos\appliances.mp4" type="video/mp4"></video>
+    </div>
+    <div class="cardvid">
+        <video autoplay muted loop playsinline><source src="..\assets\videos\appliances-videos\samsung.mp4" type="video/mp4"></video>
+    </div>
+ </div>
+  <div>
+    <div class="h2">
+        <h1>Home Televisions</h1>
+    </div>
+    <div class="row">
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-elec\1.jpg" alt="Samsung Neo QLED">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Samsung</h3>
+            <p class="product-description">65" Neo QLED 4K Smart TV, Quantum Matrix Technology, Anti-Reflection</p>
+            <p class="product-price">75,000 EGP</p>
+            <p class="price">82,000 EGP</p>
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-elec\2.jpg" alt="LG OLED TV">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">LG</h3>
+            <p class="product-description">55" OLED C3 Series 4K Smart TV, Î±9 AI Processor Gen6, Cinema HDR</p>
+            <p class="product-price">62,000 EGP</p>
+            <p class="price">68,000 EGP</p>
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-elec\3.jpg" alt="Sony Bravia">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Sony</h3>
+            <p class="product-description">50" Bravia X80K 4K Ultra HD HDR LED Smart TV with Google TV</p>
+            <p class="product-price">28,500 EGP</p>
+            <p class="price">31,000 EGP</p>
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-elec\4.jpg" alt="Tornado Smart TV">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Tornado</h3>
+            <p class="product-description">43" Full HD Smart LED TV with Built-in Receiver, Shield Protection</p>
+            <p class="product-price">12,800 EGP</p>
+            <p class="price">14,500 EGP</p>
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-elec\5.jpg" alt="Toshiba 4K TV">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Toshiba</h3>
+            <p class="product-description">55" 4K UHD Smart TV, VIDAA Engine, Dolby Vision & Atmos, Bezelless</p>
+            <p class="product-price">22,000 EGP</p>
+            <p class="price">25,500 EGP</p>
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-elec\6.jpg" alt="Sharp 4K TV">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Sharp</h3>
+            <p class="product-description">70" 4K Android Smart TV, X4 Revelation Engine, ChromeCast Built-in</p>
+            <p class="product-price">48,000 EGP</p>
+            <p class="price">54,000 EGP</p>
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+    </div>  
+    <h1 class="h2">Ovens & Microwaves</h1>
+<div class="row">
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-elec\30.jpg" alt="Zanussi Built-in Oven">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Zanussi</h3>
+            <p class="product-description">Built-in Gas Oven 60cm, Rotating Grill, Full Safety, Stainless Steel</p>
+            <p class="product-price">14,500 EGP</p>
+            <p class="price">17,000 EGP</p>
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-elec\36.jpg" alt="Samsung Microwave">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Samsung</h3>
+            <p class="product-description">Microwave 40L with Grill, Ceramic Enamel Interior, Silver - MG40</p>
+            <p class="product-price">12,500 EGP</p>
+            <p class="price">15,000 EGP</p>
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-elec\31.jpg" alt="Bosch Oven">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Bosch</h3>
+            <p class="product-description">Built-in Electric Oven 60cm, 7 Cooking Functions, 3D HotAir, Inox</p>
+            <p class="product-price">24,000 EGP</p>
+            <p class="price">28,000 EGP</p>
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-elec\35.jpg" alt="Sharp Microwave">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Sharp</h3>
+            <p class="product-description">Microwave 25L, 900W, 8 Auto Cooking Menus, Digital Control, Black</p>
+            <p class="product-price">7,800 EGP</p>
+            <p class="price">9,000 EGP</p>
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-elec\33.jpg" alt="Fresh Oven">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Fresh</h3>
+            <p class="product-description">Built-in Electric Oven 60cm, Touch Control, Convection Fan, Black Glass</p>
+            <p class="product-price">11,500 EGP</p>
+            <p class="price">13,500 EGP</p>
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-elec\34.jpg" alt="LG Microwave">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">LG</h3>
+            <p class="product-description">NeoChef Microwave 42L, Smart Inverter, Grill, Anti-Bacterial Coating</p>
+            <p class="product-price">16,000 EGP</p>
+            <p class="price">18,500 EGP</p>
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+</div>
+
+
+<h1 class="h2">Dishwashers</h1>
+<div class="row">
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-elec\w1.jpg" alt="Beko Dishwasher">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Beko</h3>
+            <p class="product-description">Dishwasher 14 Persons, 5 Programs, Inverter Motor, Silver - DFN05311S</p>
+            <p class="product-price">19,800 EGP</p>
+            <p class="price">23,000 EGP</p>
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-elec\w2.jpg" alt="Bosch Dishwasher">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Bosch</h3>
+            <p class="product-description">Dishwasher Serie 4, 13 Persons, HygienePlus Function, White - SMS46MW01I</p>
+            <p class="product-price">32,500 EGP</p>
+            <p class="price">37,000 EGP</p>
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-elec\w3.jpg" alt="Quadwash Dishwasher">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">LG</h3>
+            <p class="product-description">QuadWash Dishwasher 14 Persons, TrueSteam, SmartThinQ WiFi, Silver</p>
+            <p class="product-price">46,000 EGP</p>
+            <p class="price">52,000 EGP</p>
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-elec\w4.jpg" alt="Ariston Dishwasher">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Ariston</h3>
+            <p class="product-description">Dishwasher 15 Persons, 9 Programs, 3D Zone Wash Technology, Inox</p>
+            <p class="product-price">37,000 EGP</p>
+            <p class="price">41,500 EGP</p>
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-elec\w5.jpg" alt="Fresh Dishwasher">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Fresh</h3>
+            <p class="product-description">Forza Dishwasher 12 Persons, Steam Sterilization, 6 Programs, Silver</p>
+            <p class="product-price">18,500 EGP</p>
+            <p class="price">21,000 EGP</p>
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-elec\w6.jpg" alt="Samsung Dishwasher">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Samsung</h3>
+            <p class="product-description">Dishwasher 14 Persons, Hygiene Rinsing, Wide LED Display, Stainless</p>
+            <p class="product-price">31,000 EGP</p>
+            <p class="price">36,000 EGP</p>
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+</div>
+
+
+</div>
+<h1 class="h2">Refrigerators</h1>
+    <div class="row">
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-elec\23.jpg" alt="Samsung Refrigerator">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Samsung</h3>
+            <p class="product-description">Side-by-Side Refrigerator 655L, Digital Inverter, Silver - RS68</p>
+            <p class="product-price">92,000 EGP</p>
+            <p class="price">110,000 EGP</p>
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-elec\24.jpg" alt="LG Refrigerator">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">LG</h3>
+            <p class="product-description">InstaView Door-in-Door 630L, Linear Cooling, Matte Black</p>
+            <p class="product-price">125,000 EGP</p>
+            <p class="price">140,000 EGP</p>
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-elec\25.jpg" alt="Sharp Refrigerator">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Sharp</h3>
+            <p class="product-description">Refrigerator 599L, Digital, PlasmaCluster Technology, Black Glass</p>
+            <p class="product-price">49,500 EGP</p>
+            <p class="price">55,000 EGP</p>
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-elec\26.jpg" alt="Toshiba Refrigerator">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Toshiba</h3>
+            <p class="product-description">2-Door Refrigerator 395L, Inverter Technology, Hybrid Bio Filter</p>
+            <p class="product-price">29,800 EGP</p>
+            <p class="price">34,000 EGP</p>
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-elec\27.jpg" alt="Beko Refrigerator">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Beko</h3>
+            <p class="product-description">Refrigerator 501L, EverFresh+ Technology, Active Fresh Blue Light</p>
+            <p class="product-price">35,500 EGP</p>
+            <p class="price">41,000 EGP</p>
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-elec\28.jpg" alt="Bosch Refrigerator">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Bosch</h3>
+            <p class="product-description">Bottom Freezer Refrigerator 505L, NoFrost, MultiAirflow System</p>
+            <p class="product-price">56,000 EGP</p>
+            <p class="price">64,000 EGP</p>
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-elec\23.jpg" alt="Kiriazi Refrigerator">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Kiriazi</h3>
+            <p class="product-description">Premier No Frost Refrigerator 540L, Digital Display, Stainless Steel</p>
+            <p class="product-price">26,000 EGP</p>
+            <p class="price">29,500 EGP</p>
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-elec\24.jpg" alt="Fresh Refrigerator">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Fresh</h3>
+            <p class="product-description">Harmony Refrigerator 436L, Smart Cooling, LED Touch Panel, Black</p>
+            <p class="product-price">28,400 EGP</p>
+            <p class="price">32,000 EGP</p>
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+    </div>  
+    
+    <h1 class="h2">Laundries</h1>
+    <div class="row">
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-elec\14.jpg" alt="Samsung Washer">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Samsung</h3>
+            <p class="product-description">AddWash Front Load 9kg, Steam Cycle, Eco Bubble Technology, Silver</p>
+            <p class="product-price">36,000 EGP</p>
+            <p class="price">42,000 EGP</p>
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-elec\15.jpg" alt="LG Washer">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">LG</h3>
+            <p class="product-description">Vivace Front Load 8kg, AI DD, Steam Hygiene, ThinQ WiFi, White</p>
+            <p class="product-price">29,500 EGP</p>
+            <p class="price">34,000 EGP</p>
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-elec\16.jpg" alt="Zanussi Washer">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Zanussi</h3>
+            <p class="product-description">Perla Max Front Load 7kg, 1200 RPM, Auto-Sense Technology, Silver</p>
+            <p class="product-price">21,800 EGP</p>
+            <p class="price">25,000 EGP</p>
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-elec\17.jpg" alt="Toshiba Top Load">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Toshiba</h3>
+            <p class="product-description">Top Load Washer 11kg, Direct Drive Motor, GreatWaves Tech, Silver</p>
+            <p class="product-price">19,500 EGP</p>
+            <p class="price">22,500 EGP</p>
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-elec\18.jpg" alt="Bosch Washer">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Bosch</h3>
+            <p class="product-description">Front Load 9kg, Serie 6, EcoSilence Drive, AllergyPlus, Turkey</p>
+            <p class="product-price">39,000 EGP</p>
+            <p class="price">45,000 EGP</p>
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-elec\19.jpg" alt="Fresh Washer">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Fresh</h3>
+            <p class="product-description">Front Load 8kg, 15 Quick Wash Programs, LED Display, Silver Edition</p>
+            <p class="product-price">18,200 EGP</p>
+            <p class="price">21,000 EGP</p>
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+  </div>
+ <h1 class="h2">Air Conditions</h1>
+<div class="row">
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-elec\12.jpg" alt="Sharp AC">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Sharp</h3>
+            <p class="product-description">AC 1.5HP, Cooling & Heating, Inverter Technology, PlasmaCluster Ion</p>
+            <p class="product-price">26,500 EGP</p>
+            <p class="price">30,000 EGP</p>
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-elec\11.jpg" alt="Carrier AC">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Carrier</h3>
+            <p class="product-description">Optimax AC 2.25HP, Cool Only, Digital Display, Rapid Cooling Mode</p>
+            <p class="product-price">34,500 EGP</p>
+            <p class="price">39,000 EGP</p>
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-elec\9.jpg" alt="Fresh AC">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Fresh</h3>
+            <p class="product-description">Dual Inverter AC 1.5HP, 70% Energy Saving, Cool & Heat, ThinQ WiFi</p>
+            <p class="product-price">31,000 EGP</p>
+            <p class="price">35,000 EGP</p>
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-elec\8.jpg" alt="Fresh AC">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Fresh</h3>
+            <p class="product-description">Smart Plasma AC 1.5HP, Cool Only, Hidden Display, Eco-Friendly R410A</p>
+            <p class="product-price">20,500 EGP</p>
+            <p class="price">23,000 EGP</p>
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-elec\7.jpg" alt="Gree AC">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Gree</h3>
+            <p class="product-description">Novo AC 1.5HP, Cool Only, I-Feel Function, Self-Cleaning, Super Quiet</p>
+            <p class="product-price">21,000 EGP</p>
+            <p class="price">24,000 EGP</p>
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-elec\10.jpg" alt="Unionaire AC">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Unionaire</h3>
+            <p class="product-description">Artify AC 2.25HP, Cooling & Heating, High Efficiency Air Filters</p>
+            <p class="product-price">30,500 EGP</p>
+            <p class="price">34,000 EGP</p>
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+</div>
+
+    
+</div>
+
+    
+    </div>
+ <!-- <div class="products-container">
+    <div class="product-card">
+        <div class="product-image">
+            <img src="devphoto/d1.jpeg" alt="Product Name">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Zanussi</h3>
+           <p class="product-description">Zanussi Perla Max Fully Automatic Machine,8kg Capacity,Silver-ZWF8240SS6</p>
+            <p class="product-price">28,000 EGP</p>
+            <p class="price">32,000 EGP</p>
+            
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+ 
+    <div class="product-card">
+        <div class="product-image">
+            <img src="devphoto/d2.jpeg" alt="Product Name">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">LG Laundry</h3>
+           <p class="product-description">LG Vivace Steam Laundry 10Kg Capacity F4X5RYG24</p>
+            <p class="product-price">33,000 EGP</p>
+            <p class="price">38,000 EGP</p>
+            
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+ 
+    <div class="product-card">
+        <div class="product-image">
+            <img src="devphoto/d3.jpeg" alt="Product Name">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Refrigerator</h3>
+           <p class="product-description">Samsung Side-by-Side Refrigerator 655/604 Liter Digital with Water Dispenser Inverter RS688820B1/MR</p>
+            <p class="product-price">92,000 EGP</p>
+            <p class="price">110,000 EGP</p>
+            
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+ 
+    <div class="product-card">
+        <div class="product-image">
+            <img src="devphoto/air1.jpg" alt="Product Name">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name"></h3>
+           <p class="product-description"></p>
+            <p class="product-price">,000 EGP</p>
+            <p class="price">,000 EGP</p>
+            
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+    
+    <div class="product-card">
+        <div class="product-image">
+            <img src="devphoto/d1.jpeg" alt="Product Name">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Zanussi</h3>
+           <p class="product-description">Zanussi Perla Max Fully Automatic Machine,8kg Capacity,Silver-ZWF8240SS6</p>
+            <p class="product-price">28,000 EGP</p>
+            <p class="price">32,000 EGP</p>
+            
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+ 
+    <div class="product-card">
+        <div class="product-image">
+            <img src="devphoto/d1.jpeg" alt="Product Name">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Zanussi</h3>
+           <p class="product-description">Zanussi Perla Max Fully Automatic Machine,8kg Capacity,Silver-ZWF8240SS6</p>
+            <p class="product-price">28,000 EGP</p>
+            <p class="price">32,000 EGP</p>
+            
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+ 
+    <div class="product-card">
+        <div class="product-image">
+            <img src="devphoto/d1.jpeg" alt="Product Name">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Zanussi</h3>
+           <p class="product-description">Zanussi Perla Max Fully Automatic Machine,8kg Capacity,Silver-ZWF8240SS6</p>
+            <p class="product-price">28,000 EGP</p>
+            <p class="price">32,000 EGP</p>
+            
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+ </div> -->
+          <!-- ── Cart trigger (floating button) ─────────────────── -->
+  <button id="cart-trigger" onclick="openCart()">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+      <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+    </svg>
+    Cart
+    <span id="cart-trigger-count">0</span>
+  </button>
+
+  <!-- ── Overlay ─────────────────────────────────────────── -->
+  <div id="cart-overlay" onclick="closeCart()"></div>
+
+  <!-- ── Drawer ──────────────────────────────────────────── -->
+  <div id="cart-drawer" role="dialog" aria-label="Shopping cart">
+    <div class="cart-drawer-header">
+      <span class="cart-drawer-title">
+        Shopping cart
+        <span class="cart-drawer-badge" id="drawer-badge">0</span>
+      </span>
+      <button class="cart-close-btn" onclick="closeCart()" aria-label="Close cart">&#x2715;</button>
+    </div>
+
+    <div class="cart-drawer-body" id="cart-body">
+      <!-- Populated by JS -->
+    </div>
+
+    <div class="cart-drawer-footer">
+      <button class="checkout-btn" id="checkout-btn" disabled onclick="handleCheckout()">
+        Proceed to checkout
+      </button>
+      <button class="continue-btn" onclick="closeCart()">Continue shopping</button>
+    </div>
+  </div>
+
+  <!-- ── Toast ───────────────────────────────────────────── -->
+  <div id="cart-toast">
+    <span class="toast-dot"></span>
+    <span id="cart-toast-msg">Added to cart</span>
+  </div>
+<script src="../js/Electrical appliances-page.js"></script><script src="auth.js"></script>
+<script src="../js/cart-system.js"></script>
+<script src="../js/controls.js"></script>
+</body>
+
+</html>

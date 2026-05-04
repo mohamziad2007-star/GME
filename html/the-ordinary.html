@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ordinary - Skin Care</title>
+        <link rel="stylesheet" href="../css/main-cart.css">
+    <link rel="stylesheet" href="../css/cosmetics.css">
+        <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+</head>
+<body>
+
+    <header class="brand-header">
+        <div class="header-content">
+            <h1 class="collection-title">The Ordinary Collection</h1>
+        </div>
+<nav id="nav">
+    <a href="index.html" class="nav-logo">GME</a>
+    
+  <ul class="nav-links">
+    <li class="nav-item-dropdown">
+      <a href="index.html" class="nav-dropdown-trigger">
+        Shops <span class="nav-caret"><i class="ri-arrow-drop-down-line"></i></span>
+      </a>
+      <ul class="nav-dropdown">
+        <li><a href="Clothes1.html">Clothes</a></li>
+        <li><a href="foodcourt.html">Food</a></li>
+        <li><a href="main-cosmetics.html">Cosmetics</a></li>
+        <li><a href="cinema.html">Entertainment</a></li>
+        <li><a href="kitchen-main.html">Kitchen</a></li>
+        <li><a href="furniture.html">Furniture</a></li>
+      </ul>
+    </li>
+    <li><a href="../html/index.html">Home</a></li>
+    <li><a href="contact-us.html">Contact us</a></li>
+  </ul>
+
+  <!--Theme control-->
+  <div class="nav-right">
+    <button class="theme-toggle" onclick="ThemeToggle()" id="themeToggle" aria-label="Toggle theme" title="Toggle light / dark mode">
+      <i class="ri-moon-fill" id="dark-mode-icon"></i>
+      <i class="ri-moon-line" id="light-mode-icon"></i>
+    </button>
+    <button class="login/register" onclick="LoginToggle()" id="login/register" title="login/register">
+      <em style="border-bottom: 2px solid var(--gold); font-style: italic;">LOGIN</em>
+    </button>
+  </div>
+</nav>
+    </header>
+            <button class="back-btn" onclick="BackToggle()" id="back-btn">
+        <i class="ri-arrow-left-s-line"></i>
+    </button>
+<div class="perfume-grid">
+    <div class="perfume-card">
+        <img src="../assets/images/cosmetics-images/or1.jpg" alt="Alpha Arbutin">
+        <h3>The Ordinary - Alpha Arbutin 2%</h3>
+        <p>سيروم مخصص لتوحيد لون البشرة وتقليل مظهر التصبغات.</p>
+        <div class="price">620 EGP</div>
+        <span class="num-edi">Stock: <b class="min-js">10</b></span>
+        <button class="buy-btn" onclick="buy(this)">Add to Cart</button>
+    </div>
+    <div class="perfume-card">
+        <img src="../assets/images/cosmetics-images/or2.jpg" alt="CeraVe">
+        <h3>CeraVe - Vitamin C Serum</h3>
+        <p>سيروم مخصص لتفتيح البشرة وتحسين إشراقتها الطبيعية.</p>
+        <div class="price">1250 EGP</div>
+        <span class="num-edi">Stock: <b class="min-js">7</b></span>
+        <button class="buy-btn" onclick="buy(this)">Add to Cart</button>
+    </div>
+    <div class="perfume-card">
+        <img src="../assets/images/cosmetics-images/or3.jpg" alt="Caudalie">
+        <h3>Caudalíe Paris Tightening Serum</h3>
+        <p>سيروم للشد الفوري يعمل على تصحيح التجاعيد وشد الملامح.</p>
+        <div class="price">9100 EGP</div>
+        <span class="num-edi">Stock: <b class="min-js">3</b></span>
+        <button class="buy-btn" onclick="buy(this)">Add to Cart</button>
+    </div>
+    <div class="perfume-card">
+        <img src="../assets/images/cosmetics-images/or4.jpg" alt="SKIN1004">
+        <h3>SKIN1004 - Madagascar Centella Cleansing Oil</h3>
+        <p>زيت منظف خفيف يعمل كمذيب فعال للمكياج والأوساخ.</p>
+        <div class="price">1520 EGP</div>
+        <span class="num-edi">Stock: <b class="min-js">6</b></span>
+        <button class="buy-btn" onclick="buy(this)">Add to Cart</button>
+    </div>
+    <div class="perfume-card">
+        <img src="../assets/images/cosmetics-images/or5.jpg" alt="SROIACTY">
+        <h3>SROIACTY - Repair Serum</h3>
+        <p>سيروم مخصص للإصلاح المكثف يعمل على تجديد حيوية البشرة.</p>
+        <div class="price">1680 EGP</div>
+        <span class="num-edi">Stock: <b class="min-js">8</b></span>
+        <button class="buy-btn" onclick="buy(this)">Add to Cart</button>
+    </div>
+    <div class="perfume-card">
+        <img src="../assets/images/cosmetics-images/or6.jpg" alt="Yves Rocher">
+        <h3>Yves Rocher - Relaxing Bath & Shower Gel</h3>
+        <p>جل استحمام للاسترخاء مخصص لتنظيف الجسم مع منح شعور بالراحة.</p>
+        <div class="price">580 EGP</div>
+        <span class="num-edi">Stock: <b class="min-js">15</b></span>
+        <button class="buy-btn" onclick="buy(this)">Add to Cart</button>
+    </div>
+    <div class="perfume-card">
+        <img src="../assets/images/cosmetics-images/or7.jpg" alt="Niacinamide">
+        <h3>The Ordinary - Niacinamide 10% + Zinc 1%</h3>
+        <p>سيروم مخصص لعلاج شوائب البشرة والتحكم في الإفرازات الدهنية.</p>
+        <div class="price">530 EGP</div>
+        <span class="num-edi">Stock: <b class="min-js">12</b></span>
+        <button class="buy-btn" onclick="buy(this)">Add to Cart</button>
+    </div>
+    <div class="perfume-card">
+        <img src="../assets/images/cosmetics-images/or8jpg.jpg" alt="Glycolic Acid">
+        <h3>The Ordinary - Glycolic Acid 7% Toning Solution</h3>
+        <p>محلول مقشر يعمل على تحسين مظهر ملمس البشرة وتعزيز إشراقها.</p>
+        <div class="price">780 EGP</div>
+        <span class="num-edi">Stock: <b class="min-js">9</b></span>
+        <button class="buy-btn" onclick="buy(this)">Add to Cart</button>
+    </div>
+</div>
+        
+<!-- ── Cart trigger (floating button) ─────────────────── -->
+  <button id="cart-trigger" onclick="openCart()">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+      <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+    </svg>
+    Cart
+    <span id="cart-trigger-count">0</span>
+  </button>
+
+  <!-- ── Overlay ─────────────────────────────────────────── -->
+  <div id="cart-overlay" onclick="closeCart()"></div>
+
+  <!-- ── Drawer ──────────────────────────────────────────── -->
+  <div id="cart-drawer" role="dialog" aria-label="Shopping cart">
+    <div class="cart-drawer-header">
+      <span class="cart-drawer-title">
+        Shopping cart
+        <span class="cart-drawer-badge" id="drawer-badge">0</span>
+      </span>
+      <button class="cart-close-btn" onclick="closeCart()" aria-label="Close cart">&#x2715;</button>
+    </div>
+
+    <div class="cart-drawer-body" id="cart-body">
+      <!-- Populated by JS -->
+    </div>
+
+    <div class="cart-drawer-footer">
+      <button class="checkout-btn" id="checkout-btn" disabled onclick="handleCheckout()">
+        Proceed to checkout
+      </button>
+      <button class="continue-btn" onclick="closeCart()">Continue shopping</button>
+    </div>
+  </div>
+
+  <!-- ── Toast ───────────────────────────────────────────── -->
+  <div id="cart-toast">
+    <span class="toast-dot"></span>
+    <span id="cart-toast-msg">Added to cart</span>
+  </div>
+
+    <script src="../js/cart-system.js"></script>
+    <script src="../js/controls.js"></script><script src="auth.js"></script>
+</body>
+</html>

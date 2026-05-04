@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact Us</title>
+<link href="../css/contact-us.css" rel="stylesheet" />    <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+
+</head>
+<body>
+
+<nav id="nav">
+    <a href="index.html" class="nav-logo">GME</a>
+    
+  <ul class="nav-links">
+    <li class="nav-item-dropdown">
+      <a href="index.html" class="nav-dropdown-trigger">
+        Shops <span class="nav-caret"><i class="ri-arrow-drop-down-line"></i></span>
+      </a>
+      <ul class="nav-dropdown">
+        <li><a href="Clothes1.html">Clothes</a></li>
+        <li><a href="foodcourt.html">Food</a></li>
+        <li><a href="main-cosmetics.html">Cosmetics</a></li>
+        <li><a href="cinema.html">Entertainment</a></li>
+        <li><a href="kitchen-main.html">Kitchen</a></li>
+        <li><a href="furniture.html">Furniture</a></li>
+      </ul>
+    </li>
+    <li><a href="../html/index.html">Home</a></li>
+    <li><a href="contact-us.html">Contact us</a></li>
+  </ul>
+
+  <!--Theme control-->
+  <div class="nav-right">
+    <button class="theme-toggle" onclick="ThemeToggle()" id="themeToggle" aria-label="Toggle theme" title="Toggle light / dark mode">
+      <i class="ri-moon-fill" id="dark-mode-icon"></i>
+      <i class="ri-moon-line" id="light-mode-icon"></i>
+    </button>
+
+  </div>
+</nav>
+
+<div class="page-wrapper">
+
+  <div class="hero-strip">
+    <p class="eyebrow animate-up">Global mall of Egypt</p>
+    <h1 class="animate-up delay-1">We need your <em>feedback</em></h1>
+    <p class="animate-up delay-2">Thank you for your trust ;)</p>
+  </div>
+
+  <div class="main-content">
+
+    <div class="form-side animate-up delay-2">
+      <p class="section-label">Send a message</p>
+      <h2>Drop us a line</h2>
+      <p class="subtext">Chat with us</p>
+
+      <form id="contactForm" novalidate>
+        <div class="form-grid">
+
+          <div class="form-group">
+            <label for="firstName">First name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="mohammed" autocomplete="given-name" />
+            <span class="err-msg" id="firstNameErr">Please enter your first name</span>
+          </div>
+
+          <div class="form-group">
+            <label for="lastName">Last name</label>
+            <input type="text" id="lastName" name="lastName" placeholder="ziad" autocomplete="family-name" />
+            <span class="err-msg" id="lastNameErr">Please enter your last name</span>
+          </div>
+
+          <div class="form-group full">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="matrix@example.com" autocomplete="email" />
+            <span class="err-msg" id="emailErr">Please enter a valid email address</span>
+          </div>
+
+          <div class="form-group full">
+            <label for="phone">Phone number <span style="color:var(--fg-faint);font-weight:400">(optional)</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="+20 000000" autocomplete="tel" />
+            <span class="err-msg" id="phoneErr">Please enter a valid phone number</span>
+          </div>
+
+          <div class="form-group full">
+            <label for="subject">What's this about?</label>
+            <select id="subject" name="subject">
+              <option value="">— Pick a topic —</option>
+              <option value="general">General inquiry</option>
+              <option value="support">Customer support</option>
+              <option value="partnership">Partnership or collab</option>
+              <option value="press">Press & media</option>
+              <option value="other">Something else</option>
+            </select>
+            <span class="err-msg" id="subjectErr">Please select a topic</span>
+          </div>
+
+          <div class="form-group full">
+            <label for="message">Your message</label>
+            <textarea id="message" name="message" placeholder="Tell us what's on your mind…"></textarea>
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <span class="err-msg" id="messageErr">Message must be at least 20 characters</span>
+              <span class="char-count" id="charCount">0 / 1000</span>
+            </div>
+          </div>
+
+          <div class="submit-row">
+            <button type="submit" class="btn-submit" id="submitBtn">
+              <span class="spinner"></span>
+              <span class="btn-text">Send message</span>
+            </button>
+            <p class="form-note">We'll never share your info with third parties.</p>
+          </div>
+
+          <div class="success-banner" id="successBanner">
+            <span class="icon"></span>
+            <div>
+              <strong>Message sent!</strong><br>
+              Thanks for reaching out. Expect a reply within 1 to 2 business days.
+            </div>
+          </div>
+
+        </div>
+      </form>
+    </div>
+
+    <div class="info-side animate-up delay-3">
+      <p class="section-label">Find us</p>
+      <h2>Visit our location</h2>
+
+      <div class="map-container">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1653.5533721639904!2d31.43204013718136!3d29.991237038285888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583de55c55c8c3%3A0x97af7888ee8505a5!2sArabella%20Square!5e1!3m2!1sen!2seg!4v1777880580429!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <div class="contact-cards">
+        <div class="contact-card">
+          <div class="card-icon"></div>
+          <div class="card-title">Email</div>
+          <div class="card-value">hello@GME.co</div>
+        </div>
+        <div class="contact-card">
+          <div class="card-icon"></div>
+          <div class="card-title">Phone</div>
+          <div class="card-value">+20 0000000</div>
+        </div>
+        <div class="contact-card">
+          <div class="card-icon"></div>
+          <div class="card-title">Address</div>
+          <div class="card-value">Arabella plaza, New cairo, Egypt</div>
+        </div>
+        <div class="contact-card">
+          <div class="card-icon"></div>
+          <div class="card-title">Response time</div>
+          <div class="card-value">Within 1 business day</div>
+        </div>
+      </div>
+
+      <div class="hours-block">
+        <div class="hours-title">Store hours</div>
+        <div class="hours-row" id="row-mon"><span class="day">Monday</span><span class="time">10:00 AM – 9:00 PM</span></div>
+        <div class="hours-row" id="row-tue"><span class="day">Tuesday</span><span class="time">10:00 AM – 9:00 PM</span></div>
+        <div class="hours-row" id="row-wed"><span class="day">Wednesday</span><span class="time">10:00 AM – 9:00 PM</span></div>
+        <div class="hours-row" id="row-thu"><span class="day">Thursday</span><span class="time">10:00 AM – 9:00 PM</span></div>
+        <div class="hours-row" id="row-fri"><span class="day">Friday</span><span class="time">10:00 AM – 10:00 PM</span></div>
+        <div class="hours-row" id="row-sat"><span class="day">Saturday</span><span class="time">10:00 AM – 10:00 PM</span></div>
+        <div class="hours-row" id="row-sun"><span class="day">Sunday</span><span class="time">11:00 AM – 8:00 PM</span></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 Global mall of Egypt. All rights reserved.</p>
+  <div style="display:flex;gap:1.5rem">
+    <a href="#">Privacy</a>
+    <a href="#">Terms</a>
+    <a href="#">Accessibility</a>
+  </div>
+</footer>
+
+<script src="../js/contact-us.js"></script>
+<script src="../js/controls.js"></script><script src="auth.js"></script>
+</body>
+</html>

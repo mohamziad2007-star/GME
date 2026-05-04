@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GME | Cosmetics</title>
+    <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>    
+    <link rel="stylesheet" href="../css/cosmetics.css">
+</head>
+<body>
+    
+    <header class="hero">
+<nav id="nav">
+    <a href="index.html" class="nav-logo">GME</a>
+    
+  <ul class="nav-links">
+    <li class="nav-item-dropdown">
+      <a href="index.html" class="nav-dropdown-trigger">
+        Shops <span class="nav-caret"><i class="ri-arrow-drop-down-line"></i></span>
+      </a>
+      <ul class="nav-dropdown">
+        <li><a href="Clothes1.html">Clothes</a></li>
+        <li><a href="foodcourt.html">Food</a></li>
+        <li><a href="main-cosmetics.html">Cosmetics</a></li>
+        <li><a href="cinema.html">Entertainment</a></li>
+        <li><a href="kitchen-main.html">Kitchen</a></li>
+        <li><a href="furniture.html">Furniture</a></li>
+      </ul>
+    </li>
+    <li><a href="../html/index.html">Home</a></li>
+    <li><a href="contact-us.html">Contact us</a></li>
+  </ul>
+
+  <!--Theme control-->
+  <div class="nav-right">
+    <button class="theme-toggle" onclick="ThemeToggle()" id="themeToggle" aria-label="Toggle theme" title="Toggle light / dark mode">
+      <i class="ri-moon-fill" id="dark-mode-icon"></i>
+      <i class="ri-moon-line" id="light-mode-icon"></i>
+    </button>
+    <button class="login/register" onclick="LoginToggle()" id="login/register" title="login/register">
+      <em style="border-bottom: 2px solid var(--gold); font-style: italic;">LOGIN</em>
+    </button>
+  </div>
+</nav>
+        <video autoplay muted loop id="hero-video">
+            <source src="..\assets\images\cosmetics-images\your-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <div class="hero-content">
+            <h1>Skin Care & Hair Care</h1>
+            <p>Your Beauty Destination</p>
+        </div>
+    </header>
+
+
+    <section class="brands-container">
+        <h2>Our Brands</h2>
+        <div class="brands-grid">
+            
+            <a href="sephora.html" class="brand-item">
+                <img src="..\assets\images\cosmetics-images\s-logo.png" alt="Sephora">
+                <h3>Sephora</h3>
+            </a>
+
+            <div class="brand-item">
+                <a href="vichy.html" class="brand-item">
+                <img src="..\assets\images\cosmetics-images\logo2.png" alt="Vichy">
+                <h3>Vichy</h3>
+                </a>
+            </div>
+
+            <div class="brand-item">
+    <a href="the-ordinary.html" class="brand-item">
+        <img src="..\assets\images\cosmetics-images\logo3.png" alt="The Ordinary">
+        <h3>The Ordinary</h3>
+   
+     </a>
+     </div>
+
+            <div class="brand-item">
+           <a href="olaplex.html" class="brand-item">
+        <img src="..\assets\images\cosmetics-images\logo4.png" alt="Olaplex"> <h3>Olaplex</h3>
+    </a>
+</div>
+       <div class="brand-item">
+       <a href="perfume.html" class="brand-item">
+        <img src="..\assets\images\cosmetics-images\PR.jpg" alt="Perfume and Makeup">
+         <h3>Perfume</h3>
+    </a>
+</div>
+        
+        </div>
+    </section>
+    <script src="../js/cosmetics.js"></script>
+    <script src="../js/controls.js"></script><script src="auth.js"></script>
+</body>
+</html>

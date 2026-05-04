@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GME | Cosmetics</title>
+        <link rel="stylesheet" href="../css/main-cart.css">
+        <link rel="stylesheet" href="../css/cosmetics.css">
+        <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+</head>
+<body>
+
+    <header class="brand-header">
+
+<nav id="nav">
+    <a href="index.html" class="nav-logo">GME</a>
+    
+  <ul class="nav-links">
+    <li class="nav-item-dropdown">
+      <a href="index.html" class="nav-dropdown-trigger">
+        Shops <span class="nav-caret"><i class="ri-arrow-drop-down-line"></i></span>
+      </a>
+      <ul class="nav-dropdown">
+        <li><a href="Clothes1.html">Clothes</a></li>
+        <li><a href="foodcourt.html">Food</a></li>
+        <li><a href="main-cosmetics.html">Cosmetics</a></li>
+        <li><a href="cinema.html">Entertainment</a></li>
+        <li><a href="kitchen-main.html">Kitchen</a></li>
+        <li><a href="furniture.html">Furniture</a></li>
+      </ul>
+    </li>
+    <li><a href="../html/index.html">Home</a></li>
+    <li><a href="contact-us.html">Contact us</a></li>
+  </ul>
+
+  <!--Theme control-->
+  <div class="nav-right">
+    <button class="theme-toggle" onclick="ThemeToggle()" id="themeToggle" aria-label="Toggle theme" title="Toggle light / dark mode">
+      <i class="ri-moon-fill" id="dark-mode-icon"></i>
+      <i class="ri-moon-line" id="light-mode-icon"></i>
+    </button>
+    <button class="login/register" onclick="LoginToggle()" id="login/register" title="login/register">
+      <em style="border-bottom: 2px solid var(--gold); font-style: italic;">LOGIN</em>
+    </button>
+  </div>
+</nav>
+
+    </header>
+    
+            <div class="header-content">
+            <h1 class="collection-title">Sephora Collection</h1>
+        </div>
+
+    <button class="back-btn" onclick="BackToggle()" id="back-btn">
+        <i class="ri-arrow-left-s-line"></i>
+    </button>
+<div class="perfume-grid">
+    <div class="perfume-card">
+        <img src="../assets/images/cosmetics-images/s1.jpg" alt="Ciroa">
+        <h3>Ciroa - Strawberry & Fig Collection</h3>
+        <p>روتين متكامل للعناية بالجسم يهدف لتنظيف البشرة وتفتيحها.</p>
+        <div class="price">1750 EGP</div>
+        <span class="num-edi">Stock: <b class="min-js">6</b></span>
+        <button class="buy-btn" onclick="buy(this)">Add to Cart</button>
+    </div>
+    <div class="perfume-card">
+        <img src="../assets/images/cosmetics-images/s2.jpg" alt="Florence">
+        <h3>Florence by Mills - Skincare Routine</h3>
+        <p>روتين متكامل للعناية بالبشرة مخصص لتنقية البشرة ومحاربة الحبوب.</p>
+        <div class="price">3480 EGP</div>
+        <span class="num-edi">Stock: <b class="min-js">4</b></span>
+        <button class="buy-btn" onclick="buy(this)">Add to Cart</button>
+    </div>
+    <div class="perfume-card">
+        <img src="../assets/images/cosmetics-images/s3.jpg" alt="Laneige">
+        <h3>Laneige - Glaze Craze Tinted Lip Serum</h3>
+        <p>سيروم للشفاه ملون يجمع بين العناية والترطيب واللون الجذاب.</p>
+        <div class="price">1580 EGP</div>
+        <span class="num-edi">Stock: <b class="min-js">12</b></span>
+        <button class="buy-btn" onclick="buy(this)">Add to Cart</button>
+    </div>
+    <div class="perfume-card">
+        <img src="../assets/images/cosmetics-images/s5.jpg" alt="Torriden">
+        <h3>Torriden Hyaluronic Acid Serum</h3>
+        <p>توفير ترطيب عميق وتهدئة للبشرة باستخدام حمض الهيالورونيك.</p>
+        <div class="price">1150 EGP</div>
+        <span class="num-edi">Stock: <b class="min-js">7</b></span>
+        <button class="buy-btn" onclick="buy(this)">Add to Cart</button>
+    </div>
+    <div class="perfume-card">
+        <img src="../assets/images/cosmetics-images/s6.jpg" alt="BEHYDY">
+        <h3>BEHYDY - PLUM AMPOULE</h3>
+        <p>أمبول (سيروم مركز) مخصص لمكافحة علامات تقدم السن.</p>
+        <div class="price">2650 EGP</div>
+        <span class="num-edi">Stock: <b class="min-js">5</b></span>
+        <button class="buy-btn" onclick="buy(this)">Add to Cart</button>
+    </div>
+    <div class="perfume-card">
+        <img src="../assets/images/cosmetics-images/s7.jpg" alt="Medicube">
+        <h3>Medicube Cleansing Routine</h3>
+        <p>روتين مخصص لتنظيف وتصفية البشرة باستخدام حمض الأزيلايك.</p>
+        <div class="price">2690 EGP</div>
+        <span class="num-edi">Stock: <b class="min-js">3</b></span>
+        <button class="buy-btn" onclick="buy(this)">Add to Cart</button>
+    </div>
+    <div class="perfume-card">
+        <img src="../assets/images/cosmetics-images/s8.jpg" alt="BAYLA">
+        <h3>BAYLA SKIN - RASPBERRY FRESH</h3>
+        <p>غسول للوجه يعمل على تنقية البشرة بعمق وتخليصها من السموم.</p>
+        <div class="price">860 EGP</div>
+        <span class="num-edi">Stock: <b class="min-js">9</b></span>
+        <button class="buy-btn" onclick="buy(this)">Add to Cart</button>
+    </div>
+    <div class="perfume-card">
+        <img src="../assets/images/cosmetics-images/s9.jpg" alt="PURITO">
+        <h3>PURITO - Avocado Cleansing Balm</h3>
+        <p>بلسم منظف للوجه لإزالة المكياج والشوائب بفعالية.</p>
+        <div class="price">1100 EGP</div>
+        <span class="num-edi">Stock: <b class="min-js">10</b></span>
+        <button class="buy-btn" onclick="buy(this)">Add to Cart</button>
+    </div>
+</div>
+
+  <!-- ── Toast ───────────────────────────────────────────── -->
+  <div id="cart-toast">
+    <span class="toast-dot"></span>
+    <span id="cart-toast-msg">Added to cart</span>
+  </div>
+
+    <script src="../js/cart-system.js"></script>
+    <script src="../js/controls.js"></script><script src="auth.js"></script>
+</body>
+</html>

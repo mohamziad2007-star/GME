@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<head>
+    <title>Booking</title>
+    <link rel="stylesheet" href="../css/cinema.css">
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    
+<nav id="nav">
+    <a href="index.html" class="nav-logo">GME</a>
+    
+  <ul class="nav-links">
+    <li class="nav-item-dropdown">
+      <a href="index.html" class="nav-dropdown-trigger">
+        Shops <span class="nav-caret"><i class="ri-arrow-drop-down-line"></i></span>
+      </a>
+      <ul class="nav-dropdown">
+        <li><a href="Clothes1.html">Clothes</a></li>
+        <li><a href="foodcourt.html">Food</a></li>
+        <li><a href="main-cosmetics.html">Cosmetics</a></li>
+        <li><a href="cinema.html">Entertainment</a></li>
+        <li><a href="kitchen-main.html">Kitchen</a></li>
+        <li><a href="furniture.html">Furniture</a></li>
+      </ul>
+    </li>
+    <li><a href="../html/index.html">Home</a></li>
+    <li><a href="contact-us.html">Contact us</a></li>
+  </ul>
+
+  <!--Theme control-->
+  <div class="nav-right">
+    <button class="theme-toggle" onclick="ThemeToggle()" id="themeToggle" aria-label="Toggle theme" title="Toggle light / dark mode">
+      <i class="ri-moon-fill" id="dark-mode-icon"></i>
+      <i class="ri-moon-line" id="light-mode-icon"></i>
+    </button>
+    <button class="login/register" onclick="LoginToggle()" id="login/register" title="login/register">
+      <em style="border-bottom: 2px solid var(--gold); font-style: italic;">LOGIN</em>
+    </button>
+  </div>
+</nav>
+  <div class="wrap">
+    <p class="eyebrow">Secure your seat</p>
+    <h1 class="heading">Complete your<br><span>booking</span></h1>
+ 
+    <!-- Showtime -->
+    <div class="field">
+      <label class="label">Show time</label>
+      <select class="sel">
+        <option value="">— select a showtime —</option>
+        <option value="10:30">10:30 AM · Morning</option>
+        <option value="13:45">01:45 PM · Matinée</option>
+        <option value="18:15">06:15 PM · Evening</option>
+        <option value="21:45">09:45 PM · Late Night</option>
+      </select>
+    </div>
+ 
+    <!-- Payment -->
+    <div class="field">
+      <label class="label">Payment method</label>
+      <div class="radio-group">
+        <label class="radio-item">
+          <input type="radio" name="payment" value="visa">
+          <div class="radio-dot"></div>
+          <span class="radio-label">Visa</span>
+          <span class="radio-badge">Card</span>
+        </label>
+        <label class="radio-item">
+          <input type="radio" name="payment" value="fawry">
+          <div class="radio-dot"></div>
+          <span class="radio-label">Fawry</span>
+          <span class="radio-badge">Cash</span>
+        </label>
+        <label class="radio-item">
+          <input type="radio" name="payment" value="vodafone">
+          <div class="radio-dot"></div>
+          <span class="radio-label">Vodafone Cash</span>
+          <span class="radio-badge">Mobile</span>
+        </label>
+      </div>
+    </div>
+ 
+    <!-- Tickets -->
+    <div class="field">
+      <label class="label">Number of tickets</label>
+      <div class="num-wrap">
+        <input class="num-val" type="number" id="tickets" value="1" min="1" max="10">
+      </div>
+    </div>
+ 
+    <button class="cta"><span>Confirm booking</span></button>
+    <br>
+    <a href="cinema.html" class="back">Back to films</a>
+  </div>
+
+<script src="../js/controls.js"></script><script src="auth.js"></script>
+</body>
+</html>

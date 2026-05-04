@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GME</title>
+   <link rel="stylesheet" href="../css/Electrical appliances-style.css">
+   <link rel="stylesheet" href="../css/main-cart.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet">
+</head>
+
+<body>
+<nav id="nav">
+    <a href="index.html" class="nav-logo">GME</a>
+    
+  <ul class="nav-links">
+    <li class="nav-item-dropdown">
+      <a href="index.html" class="nav-dropdown-trigger">
+        Shops <span class="nav-caret"><i class="ri-arrow-drop-down-line"></i></span>
+      </a>
+      <ul class="nav-dropdown">
+        <li><a href="Clothes1.html">Clothes</a></li>
+        <li><a href="foodcourt.html">Food</a></li>
+        <li><a href="main-cosmetics.html">Cosmetics</a></li>
+        <li><a href="cinema.html">Entertainment</a></li>
+        <li><a href="kitchen-main.html">Kitchen</a></li>
+        <li><a href="furniture.html">Furniture</a></li>
+      </ul>
+    </li>
+    <li><a href="../html/index.html">Home</a></li>
+    <li><a href="contact-us.html">Contact us</a></li>
+  </ul>
+
+  <!--Theme control-->
+  <div class="nav-right">
+    <button class="theme-toggle" onclick="ThemeToggle()" id="themeToggle" aria-label="Toggle theme" title="Toggle light / dark mode">
+      <i class="ri-moon-fill" id="dark-mode-icon"></i>
+      <i class="ri-moon-line" id="light-mode-icon"></i>
+    </button>
+    <button class="login/register" onclick="LoginToggle()" id="login/register" title="login/register">
+      <em style="border-bottom: 2px solid var(--gold); font-style: italic;">LOGIN</em>
+    </button>
+  </div>
+</nav>
+
+ <div class="main">
+   <div class="cardvid">
+      <video autoplay muted loop playsinline><source src="..\assets\videos\appliances-videos\dev3.mp4" type="video/mp4"></video>
+    </div>
+    <div class="cardvid">
+       <video autoplay muted loop playsinline><source src="..\assets\videos\appliances-videos\dev2.mp4" type="video/mp4"></video>
+    </div>
+    <div class="cardvid">
+        <video autoplay muted loop playsinline><source src="..\assets\videos\appliances-videos\dev4.mp4" type="video/mp4"></video>
+    </div>
+ </div>
+    
+<div class="row">
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-es\1.jpg" alt="Hand Blender">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Braun</h3>
+            <p class="product-description">MultiQuick Hand Blender, 1000W, PowerBell Plus Technology, Black</p>
+            <p class="product-price">3,500 EGP</p>
+            <p class="price">4,200 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-es\2.jpg" alt="Hand Blender Set">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Braun</h3>
+            <p class="product-description">MultiQuick 7 Hand Blender Set, ActiveBlade Technology, 1000W + Accessories</p>
+            <p class="product-price">4,800 EGP</p>
+            <p class="price">5,500 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-es\3.jpg" alt="Food Chopper">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Kenwood</h3>
+            <p class="product-description">Electric Mini Chopper, 500W, 0.5L Bowl, Stainless Steel Quad Blades</p>
+            <p class="product-price">1,950 EGP</p>
+            <p class="price">2,400 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-es\4.jpg" alt="Food Processor">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Moulinex</h3>
+            <p class="product-description">Odacio Food Processor, 1000W, 32 Functions, Large 3L Bowl, White</p>
+            <p class="product-price">7,500 EGP</p>
+            <p class="price">8,800 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-es\5.jpg" alt="Meat Grinder">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Black & Decker</h3>
+            <p class="product-description">Electric Meat Grinder, 1500W, Reversible Function, 3 Cutting Plates</p>
+            <p class="product-price">4,200 EGP</p>
+            <p class="price">4,900 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-es\6.jpg" alt="Blender">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Mienta</h3>
+            <p class="product-description">Blender with 2 Grinders, 500W, 1.5L Jug, Pulse Function, Black</p>
+            <p class="product-price">2,300 EGP</p>
+            <p class="price">2,800 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-es\7.jpg" alt="Water Filter">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Tank</h3>
+            <p class="product-description">Tank Power R.O. 7-Stage Water Filter System, Complete Installation Kit</p>
+            <p class="product-price">5,100 EGP</p>
+            <p class="price">6,000 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-es\8.jpg" alt="Food Chopper Fresh">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Fresh</h3>
+            <p class="product-description">Electric Food Chopper, 400W, 1L Bowl, Double Blades, Stainless Steel</p>
+            <p class="product-price">1,650 EGP</p>
+            <p class="price">2,100 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-es\9.jpg" alt="Hand Blender Set Fresh">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Fresh</h3>
+            <p class="product-description">Hand Blender Set, 800W, Turbo Function, Whisker & Chopper Included</p>
+            <p class="product-price">2,900 EGP</p>
+            <p class="price">3,500 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-es\10.jpg" alt="Chopper Moulinex">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Moulinex</h3>
+            <p class="product-description">Electric Food Chopper, 500W, Stainless Steel Blades, 0.8L Bowl</p>
+            <p class="product-price">1,850 EGP</p>
+            <p class="price">2,300 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-es\11.jpg" alt="Air Fryer Philips">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Philips</h3>
+            <p class="product-description">Essential Air Fryer, 4.1L Capacity, Rapid Air Technology, Black</p>
+            <p class="product-price">6,800 EGP</p>
+            <p class="price">8,000 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-es\12.jpg" alt="Kitchen Scale Beurer">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Beurer</h3>
+            <p class="product-description">Digital Kitchen Scale, Slim Design, High Precision Sensor, LCD Display</p>
+            <p class="product-price">950 EGP</p>
+            <p class="price">1,200 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-es\13.jpg" alt="Kettle Tefal">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Tefal</h3>
+            <p class="product-description">Electric Kettle 1.7L, Stainless Steel Body, Fast Boil System</p>
+            <p class="product-price">1,400 EGP</p>
+            <p class="price">1,800 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-es\14.jpg" alt="Coffee Maker DeLonghi">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">DeLonghi</h3>
+            <p class="product-description">Espresso & Cappuccino Maker, 15 Bar Pressure, Traditional Milk Frother</p>
+            <p class="product-price">8,200 EGP</p>
+            <p class="price">9,500 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-es\15.jpg" alt="Toaster Toaster">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Black & Decker</h3>
+            <p class="product-description">2-Slice Toaster, 7 Browning Levels, Defrost Function, Silver/Black</p>
+            <p class="product-price">2,100 EGP</p>
+            <p class="price">2,600 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-es\16.jpg" alt="Meat Grinder Panasonic">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Panasonic</h3>
+            <p class="product-description">Meat Grinder 1500W, 3 Stainless Steel Cutting Plates, White</p>
+            <p class="product-price">5,400 EGP</p>
+            <p class="price">6,200 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-es\17.jpg" alt="Steam Iron Philips">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Philips</h3>
+            <p class="product-description">SteamGlide Iron, 2400W, Anti-calc System, Ceramic Soleplate</p>
+            <p class="product-price">2,800 EGP</p>
+            <p class="price">3,300 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-es\18.jpg" alt="Vacuum Cleaner Hoover">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Hoover</h3>
+            <p class="product-description">Drum Vacuum Cleaner, 2000W, 18L Tank Capacity, Blower Function</p>
+            <p class="product-price">4,900 EGP</p>
+            <p class="price">5,800 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-es\19.jpg" alt="Garment Steamer Philips">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Philips</h3>
+            <p class="product-description">Stand Garment Steamer, 1800W, 35g/min Continuous Steam, 1.4L Tank</p>
+            <p class="product-price">5,600 EGP</p>
+            <p class="price">6,500 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-es\20.jpg" alt="Drum Vacuum Hitachi">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Hitachi</h3>
+            <p class="product-description">Drum Vacuum Cleaner, 2100W, 18L Dust Capacity, Strong Steel Body</p>
+            <p class="product-price">7,800 EGP</p>
+            <p class="price">8,900 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-es\21.jpg" alt="Hair Clipper Braun">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Braun</h3>
+            <p class="product-description">All-in-one Trimmer Series 5, 9-in-1 Styling Kit, Cordless, Waterproof</p>
+            <p class="product-price">2,400 EGP</p>
+            <p class="price">3,000 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-es\22.jpg" alt="Hair Dryer Babyliss">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Babyliss</h3>
+            <p class="product-description">Expert Hair Dryer, 2200W, Ionic Technology, 3 Heat/2 Speed Settings</p>
+            <p class="product-price">1,800 EGP</p>
+            <p class="price">2,200 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-es\23.jpg" alt="Hair Straightener Remington">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Remington</h3>
+            <p class="product-description">Ceramic Straight 230, Digital Display, Fast Heat Up, Anti-Static</p>
+            <p class="product-price">2,150 EGP</p>
+            <p class="price">2,700 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="..\assets\images\appliances-images\devphoto\devphoto\page-es\24.jpg" alt="Body Scale Beurer">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Beurer</h3>
+            <p class="product-description">Digital Glass Bathroom Scale, XL Display, 180kg Capacity, Slim Design</p>
+            <p class="product-price">1,200 EGP</p>
+            <p class="price">1,550 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+</div>
+
+ <!-- <div class="products-container">
+    <div class="product-card">
+        <div class="product-image">
+            <img src="devphoto/d1.jpeg" alt="Product Name">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Zanussi</h3>
+           <p class="product-description">Zanussi Perla Max Fully Automatic Machine,8kg Capacity,Silver-ZWF8240SS6</p>
+            <p class="product-price">28,000 EGP</p>
+            <p class="price">32,000 EGP</p>
+            
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+ 
+    <div class="product-card">
+        <div class="product-image">
+            <img src="devphoto/d2.jpeg" alt="Product Name">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">LG Laundry</h3>
+           <p class="product-description">LG Vivace Steam Laundry 10Kg Capacity F4X5RYG24</p>
+            <p class="product-price">33,000 EGP</p>
+            <p class="price">38,000 EGP</p>
+            
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+ 
+    <div class="product-card">
+        <div class="product-image">
+            <img src="devphoto/d3.jpeg" alt="Product Name">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Refrigerator</h3>
+           <p class="product-description">Samsung Side-by-Side Refrigerator 655/604 Liter Digital with Water Dispenser Inverter RS688820B1/MR</p>
+            <p class="product-price">92,000 EGP</p>
+            <p class="price">110,000 EGP</p>
+            
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+ 
+    <div class="product-card">
+        <div class="product-image">
+            <img src="devphoto/air1.jpg" alt="Product Name">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name"></h3>
+           <p class="product-description"></p>
+            <p class="product-price">,000 EGP</p>
+            <p class="price">,000 EGP</p>
+            
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+    
+    <div class="product-card">
+        <div class="product-image">
+            <img src="devphoto/d1.jpeg" alt="Product Name">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Zanussi</h3>
+           <p class="product-description">Zanussi Perla Max Fully Automatic Machine,8kg Capacity,Silver-ZWF8240SS6</p>
+            <p class="product-price">28,000 EGP</p>
+            <p class="price">32,000 EGP</p>
+            
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+ 
+    <div class="product-card">
+        <div class="product-image">
+            <img src="devphoto/d1.jpeg" alt="Product Name">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Zanussi</h3>
+           <p class="product-description">Zanussi Perla Max Fully Automatic Machine,8kg Capacity,Silver-ZWF8240SS6</p>
+            <p class="product-price">28,000 EGP</p>
+            <p class="price">32,000 EGP</p>
+            
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+ 
+    <div class="product-card">
+        <div class="product-image">
+            <img src="devphoto/d1.jpeg" alt="Product Name">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Zanussi</h3>
+           <p class="product-description">Zanussi Perla Max Fully Automatic Machine,8kg Capacity,Silver-ZWF8240SS6</p>
+            <p class="product-price">28,000 EGP</p>
+            <p class="price">32,000 EGP</p>
+            
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+ </div> -->
+          <!-- ── Cart trigger (floating button) ─────────────────── -->
+  <button id="cart-trigger" onclick="openCart()">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+      <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+    </svg>
+    Cart
+    <span id="cart-trigger-count">0</span>
+  </button>
+
+  <!-- ── Overlay ─────────────────────────────────────────── -->
+  <div id="cart-overlay" onclick="closeCart()"></div>
+
+  <!-- ── Drawer ──────────────────────────────────────────── -->
+  <div id="cart-drawer" role="dialog" aria-label="Shopping cart">
+    <div class="cart-drawer-header">
+      <span class="cart-drawer-title">
+        Shopping cart
+        <span class="cart-drawer-badge" id="drawer-badge">0</span>
+      </span>
+      <button class="cart-close-btn" onclick="closeCart()" aria-label="Close cart">&#x2715;</button>
+    </div>
+
+    <div class="cart-drawer-body" id="cart-body">
+      <!-- Populated by JS -->
+    </div>
+
+    <div class="cart-drawer-footer">
+      <button class="checkout-btn" id="checkout-btn" disabled onclick="handleCheckout()">
+        Proceed to checkout
+      </button>
+      <button class="continue-btn" onclick="closeCart()">Continue shopping</button>
+    </div>
+  </div>
+
+  <!-- ── Toast ───────────────────────────────────────────── -->
+  <div id="cart-toast">
+    <span class="toast-dot"></span>
+    <span id="cart-toast-msg">Added to cart</span>
+  </div>
+<script src="../js/Electrical appliances-page.js"></script>
+<script src="../js/cart-system.js"></script>
+<script src="../js/controls.js"></script><script src="auth.js"></script>
+</body>
+
+</html>

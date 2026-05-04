@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>GME | Cosmetics</title>
+        <link rel="stylesheet" href="../css/main-cart.css">
+    <link rel="stylesheet" href="../css/cosmetics.css">
+        <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+</head>
+<body>
+<nav id="nav">
+    <a href="index.html" class="nav-logo">GME</a>
+    
+  <ul class="nav-links">
+    <li class="nav-item-dropdown">
+      <a href="index.html" class="nav-dropdown-trigger">
+        Shops <span class="nav-caret"><i class="ri-arrow-drop-down-line"></i></span>
+      </a>
+      <ul class="nav-dropdown">
+        <li><a href="Clothes1.html">Clothes</a></li>
+        <li><a href="foodcourt.html">Food</a></li>
+        <li><a href="main-cosmetics.html">Cosmetics</a></li>
+        <li><a href="cinema.html">Entertainment</a></li>
+        <li><a href="kitchen-main.html">Kitchen</a></li>
+        <li><a href="furniture.html">Furniture</a></li>
+      </ul>
+    </li>
+    <li><a href="../html/index.html">Home</a></li>
+    <li><a href="contact-us.html">Contact us</a></li>
+  </ul>
+
+  <!--Theme control-->
+  <div class="nav-right">
+    <button class="theme-toggle" onclick="ThemeToggle()" id="themeToggle" aria-label="Toggle theme" title="Toggle light / dark mode">
+      <i class="ri-moon-fill" id="dark-mode-icon"></i>
+      <i class="ri-moon-line" id="light-mode-icon"></i>
+    </button>
+    <button class="login/register" onclick="LoginToggle()" id="login/register" title="login/register">
+      <em style="border-bottom: 2px solid var(--gold); font-style: italic;">LOGIN</em>
+    </button>
+  </div>
+</nav>
+        <div class="header-content">
+            <h1 class="collection-title">Perfume collection</h1>
+        </div>
+
+    <button class="back-btn" onclick="BackToggle()" id="back-btn">
+        <i class="ri-arrow-left-s-line"></i>
+    </button>
+<div class="space"></div>
+    <div class="perfume-grid">
+    <!-- Women's Section -->
+    <div class="perfume-card women">
+        <div class="gender-label">نسائي</div>
+        <img src="../assets/images/cosmetics-images/w.jpg" alt="Eclaire">
+        <h3>Lattafa Eclaire</h3>
+        <p>مزيج غني جداً من الكراميل والفانيليا مع لمسات حليبية ناعمة.</p>
+        <div class="price">6050 EGP</div>
+        <span class="num-edi">Stock: <b class="min-js">3</b></span>
+        <button class="buy-btn" onclick="buy(this)">Add to Cart</button>
+    </div>
+    <div class="perfume-card women">
+        <div class="gender-label">نسائي</div>
+        <img src="../assets/images/cosmetics-images/w2.jpg" alt="Berry Blast">
+        <h3>ORREN - BERRY BLAST</h3>
+        <p>العطر عبارة عن "انفجار" من روائح التوت المشكل.</p>
+        <div class="price">1200 EGP</div>
+        <span class="num-edi">Stock: <b class="min-js">5</b></span>
+        <button class="buy-btn" onclick="buy(this)">Add to Cart</button>
+    </div>
+    <div class="perfume-card women">
+        <div class="gender-label">نسائي</div>
+        <img src="../assets/images/cosmetics-images/w1.jpg" alt="Bella Vita">
+        <h3>Bella Vita Luxury - Berry Blast</h3>
+        <p>مزيج غني ومسكر من التوت المشكل مع لمسات من الزهور.</p>
+        <div class="price">7800 EGP</div>
+        <span class="num-edi">Stock: <b class="min-js">4</b></span>
+        <button class="buy-btn" onclick="buy(this)">Add to Cart</button>
+    </div>
+    <div class="perfume-card women">
+        <div class="gender-label">نسائي</div>
+        <img src="../assets/images/cosmetics-images/w4.jpg" alt="Tom Ford">
+        <h3>Tom Ford - Lost Cherry</h3>
+        <p>رائحة كرز أحمر مكثفة ومسكرة، تشبه رائحة حلوى الكرز الفاخرة.</p>
+        <div class="price">18000 EGP</div>
+        <span class="num-edi">Stock: <b class="min-js">2</b></span>
+        <button class="buy-btn" onclick="buy(this)">Add to Cart</button>
+    </div>
+    <div class="perfume-card women">
+        <div class="gender-label">نسائي</div>
+        <img src="../assets/images/cosmetics-images/m7.jpg" alt="YSL Libre">
+        <h3>Yves Saint Laurent - Libre Elixir</h3>
+        <p>مزيج متقن بين اللافندر والفانيليا مع نوتات فاكهية.</p>
+        <div class="price">9800 EGP</div>
+        <span class="num-edi">Stock: <b class="min-js">6</b></span>
+        <button class="buy-btn" onclick="buy(this)">Add to Cart</button>
+    </div>
+    <div class="perfume-card women">
+        <div class="gender-label">نسائي</div>
+        <img src="../assets/images/cosmetics-images/w5.jpg" alt="Valentino">
+        <h3>Valentino Uomo Born In Roma Intense</h3>
+        <p>مزيج متوازن بين الانتعاش والعمق الدافئ.</p>
+        <div class="price">7700 EGP</div>
+        <span class="num-edi">Stock: <b class="min-js">3</b></span>
+        <button class="buy-btn" onclick="buy(this)">Add to Cart</button>
+    </div>
+
+    <!-- Men's Section -->
+    <div class="perfume-card men">
+        <div class="gender-label">رجالي</div>
+        <img src="../assets/images/cosmetics-images/m1.jpg" alt="Dior Sauvage">
+        <h3>Dior Sauvage Eau Forte</h3>
+        <p>مزيج منعش وقوي يجمع بين التوابل الباردة والأخشاب المسكية.</p>
+        <div class="price">3800 EGP</div>
+        <span class="num-edi">Stock: <b class="min-js">5</b></span>
+        <button class="buy-btn" onclick="buy(this)">Add to Cart</button>
+    </div>
+    <div class="perfume-card men">
+        <div class="gender-label">رجالي</div>
+        <img src="../assets/images/cosmetics-images/m2.jpg" alt="Lattafa Khamrah">
+        <h3>Lattafa Khamrah Qahwa</h3>
+        <p>مزيج شرقي غني يجمع بين القهوة العربية والتوابل الدافئة.</p>
+        <div class="price">7000 EGP</div>
+        <span class="num-edi">Stock: <b class="min-js">8</b></span>
+        <button class="buy-btn" onclick="buy(this)">Add to Cart</button>
+    </div>
+    <div class="perfume-card men">
+        <div class="gender-label">رجالي</div>
+        <img src="../assets/images/cosmetics-images/m3.jpg" alt="Ibraheem Qurashi">
+        <h3>Ibraheem Al.Qurashi - Grey Pearl Diamond</h3>
+        <p>يشتهر برائحة البودرة والمسك مع لمسات من الأخشاب الراقية.</p>
+        <div class="price">9000 EGP</div>
+        <span class="num-edi">Stock: <b class="min-js">4</b></span>
+        <button class="buy-btn" onclick="buy(this)">Add to Cart</button>
+    </div>
+    <div class="perfume-card men">
+        <div class="gender-label">رجالي</div>
+        <img src="../assets/images/cosmetics-images/m4.jpg" alt="Armaf">
+        <h3>Armaf Club de Nuit Intense Man</h3>
+        <p>تبدأ برائحة حمضية فواكه قوية ثم تتحول لرائحة خشبية دخانية.</p>
+        <div class="price">5700 EGP</div>
+        <span class="num-edi">Stock: <b class="min-js">10</b></span>
+        <button class="buy-btn" onclick="buy(this)">Add to Cart</button>
+    </div>
+    <div class="perfume-card men">
+        <div class="gender-label">رجالي</div>
+        <img src="../assets/images/cosmetics-images/m5.jpg" alt="YSL MYSLF">
+        <h3>Yves Saint Laurent MYSLF Le Parfum</h3>
+        <p>يتميز برائحة خشبية زهرية مكثفة مع لمسة من التوابل.</p>
+        <div class="price">7100 EGP</div>
+        <span class="num-edi">Stock: <b class="min-js">6</b></span>
+        <button class="buy-btn" onclick="buy(this)">Add to Cart</button>
+    </div>
+    <div class="perfume-card men">
+        <div class="gender-label">رجالي</div>
+        <img src="../assets/images/cosmetics-images/m6.jpg" alt="TMAX">
+        <h3>TMAX SCENTS - MYSELF</h3>
+        <p>مزيج منعش يجمع بين الأزهار البيضاء والأخشاب.</p>
+        <div class="price">8970 EGP</div>
+        <span class="num-edi">Stock: <b class="min-js">5</b></span>
+        <button class="buy-btn" onclick="buy(this)">Add to Cart</button>
+    </div>
+</div>
+<!-- ── Cart trigger (floating button) ─────────────────── -->
+  <button id="cart-trigger" onclick="openCart()">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+      <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+    </svg>
+    Cart
+    <span id="cart-trigger-count">0</span>
+  </button>
+
+  <!-- ── Overlay ─────────────────────────────────────────── -->
+  <div id="cart-overlay" onclick="closeCart()"></div>
+
+  <!-- ── Drawer ──────────────────────────────────────────── -->
+  <div id="cart-drawer" role="dialog" aria-label="Shopping cart">
+    <div class="cart-drawer-header">
+      <span class="cart-drawer-title">
+        Shopping cart
+        <span class="cart-drawer-badge" id="drawer-badge">0</span>
+      </span>
+      <button class="cart-close-btn" onclick="closeCart()" aria-label="Close cart">&#x2715;</button>
+    </div>
+
+    <div class="cart-drawer-body" id="cart-body">
+      <!-- Populated by JS -->
+    </div>
+
+    <div class="cart-drawer-footer">
+      <button class="checkout-btn" id="checkout-btn" disabled onclick="handleCheckout()">
+        Proceed to checkout
+      </button>
+      <button class="continue-btn" onclick="closeCart()">Continue shopping</button>
+    </div>
+  </div>
+
+  <!-- ── Toast ───────────────────────────────────────────── -->
+  <div id="cart-toast">
+    <span class="toast-dot"></span>
+    <span id="cart-toast-msg">Added to cart</span>
+  </div>
+
+    <script src="../js/cart-system.js"></script><script src="auth.js"></script>
+    <script src="../js/controls.js"></script>
+</body>
+</html>

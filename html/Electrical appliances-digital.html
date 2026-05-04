@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GME</title>
+   <link rel="stylesheet" href="../css/Electrical appliances-style.css">
+   <link rel="stylesheet" href="../css/main-cart.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet">
+</head>
+
+<body>
+<nav id="nav">
+    <a href="index.html" class="nav-logo">GME</a>
+    
+  <ul class="nav-links">
+    <li class="nav-item-dropdown">
+      <a href="index.html" class="nav-dropdown-trigger">
+        Shops <span class="nav-caret"><i class="ri-arrow-drop-down-line"></i></span>
+      </a>
+      <ul class="nav-dropdown">
+        <li><a href="Clothes1.html">Clothes</a></li>
+        <li><a href="foodcourt.html">Food</a></li>
+        <li><a href="main-cosmetics.html">Cosmetics</a></li>
+        <li><a href="cinema.html">Entertainment</a></li>
+        <li><a href="kitchen-main.html">Kitchen</a></li>
+        <li><a href="furniture.html">Furniture</a></li>
+      </ul>
+    </li>
+    <li><a href="../html/index.html">Home</a></li>
+    <li><a href="contact-us.html">Contact us</a></li>
+  </ul>
+
+  <!--Theme control-->
+  <div class="nav-right">
+    <button class="theme-toggle" onclick="ThemeToggle()" id="themeToggle" aria-label="Toggle theme" title="Toggle light / dark mode">
+      <i class="ri-moon-fill" id="dark-mode-icon"></i>
+      <i class="ri-moon-line" id="light-mode-icon"></i>
+    </button>
+    <button class="login/register" onclick="LoginToggle()" id="login/register" title="login/register">
+      <em style="border-bottom: 2px solid var(--gold); font-style: italic;">LOGIN</em>
+    </button>
+  </div>
+</nav>
+
+ <div class="main">
+   <div class="cardvid">
+      <video autoplay muted loop playsinline><source src="..\assets\videos\appliances-videos\dev3.mp4" type="video/mp4"></video>
+    </div>
+    <div class="cardvid">
+       <video autoplay muted loop playsinline><source src="..\assets\videos\appliances-videos\dev2.mp4" type="video/mp4"></video>
+    </div>
+    <div class="cardvid">
+        <video autoplay muted loop playsinline><source src="..\assets\videos\appliances-videos\dev4.mp4" type="video/mp4"></video>
+    </div>
+ </div>
+ 
+ <div class="h2">
+        <h1>Smart Phones</h1>
+    </div>
+<div class="row">
+    <div class="container">
+        <div class="product-image">
+            <img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-15-pro-1.jpg" alt="iPhone 15">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name"><a href="https://www.apple.com/shop/buy-iphone/iphone-15-pro" target="_blank" rel="noopener">Apple</a></h3>
+            <p class="product-description">iPhone 15, 256GB, Titanium Blue, A17 Pro Chip, 6.7-inch Display</p>
+            <p class="product-price">72,000 EGP</p>
+            <p class="price">80,000 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s24-ultra-5g.jpg" alt="Samsung S24 Ultra">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name"><a href="https://www.samsung.com/global/galaxy/galaxy-s24-ultra/" target="_blank" rel="noopener">Samsung</a></h3>
+            <p class="product-description">Galaxy S24 Ultra, 256GB, 12GB RAM, Titanium Gray, AI Features, S-Pen</p>
+            <p class="product-price">55,500 EGP</p>
+            <p class="price">64,000 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-17-1.jpg" alt="iPhone 17">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name"><a href="https://www.apple.com/shop/buy-iphone/iphone-17" target="_blank" rel="noopener">Apple</a></h3>
+            <p class="product-description">iPhone 17, 128GB, Midnight Blue, A15 Bionic Chip, Super Retina XDR</p>
+            <p class="product-price">44,000 EGP</p>
+            <p class="price">48,500 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-a16-5g-1.jpg" alt="Samsung A17">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name"><a href="https://www.samsung.com/global/galaxy/galaxy-a/" target="_blank" rel="noopener">Samsung</a></h3>
+            <p class="product-description">Galaxy A17 4G, 64GB, 4GB RAM, Awesome Lime, 50MP OIS Camera</p>
+            <p class="product-price">10,200 EGP</p>
+            <p class="price">21,000 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-14-4g.jpg" alt="Redmi Note 15">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name"><a href="https://m.media-amazon.com/images/I/61k0wuL5IqL._AC_UL320_.jpg" target="_blank" rel="noopener">Xiaomi</a></h3>
+            <p class="product-description">Redmi Note 15, 256GB, 12GB RAM, Mint Green, 108MP Triple Camera</p>
+            <p class="product-price">13,500 EGP</p>
+            <p class="price">14,200 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="https://fdn2.gsmarena.com/vv/bigpic/oppo-reno14-f.jpg" alt="Oppo reno 15F">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name"><a href="https://m.media-amazon.com/images/I/61fCDFKNSQL._AC_SX450_.jpg" target="_blank" rel="noopener">Oppo</a></h3>
+            <p class="product-description">Oppo reno 14F, 256GB, 8GB RAM, Sunrise Beige (Leather Back), 100MP</p>
+            <p class="product-price">15,800 EGP</p>
+            <p class="price">18,000 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="https://fdn2.gsmarena.com/vv/bigpic/oppo-reno14-f.jpg" alt="Oppo Reno 15F">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name"><a href="https://www.oppo.com/en/smartphones/series-reno/reno15-f/" target="_blank" rel="noopener">Oppo</a></h3>
+            <p class="product-description">Reno 15F 5G, 256GB, 8GB RAM, Ice Blue, 32MP Telephoto Portrait Camera</p>
+            <p class="product-price">19,500 EGP</p>
+            <p class="price">22,000 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a56-5g.jpg" alt="samsung A56">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name"><a href="https://www.samsung.com/global/galaxy/galaxy-a56/" target="_blank" rel="noopener">Samsung</a></h3>
+            <p class="product-description">Samsung A56 5G, 512GB, 12GB RAM, Black, 50MP Ultra-Clear Camera</p>
+            <p class="product-price">24,400 EGP</p>
+            <p class="price">26,500 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-17-pro-max-1.jpg" alt="Iphone 17 pro max">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name"><a href="https://www.apple.com/shop/buy-iphone/iphone-17-pro" target="_blank" rel="noopener">Apple</a></h3>
+            <p class="product-description">Iphone 17 Pro Max 5G, 256GB, 12GB RAM, Noble Black, Aura Light Portrait Video</p>
+            <p class="product-price">69,000 EGP</p>
+            <p class="price">74,500 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+</div>
+
+<h1 class="h2">Accessories</h1>
+<div class="row">
+    <div class="container">
+        <div class="product-image">
+            <img src="https://m.media-amazon.com/images/I/61CGHv6kmWL._AC_SX450_.jpg" alt="Soundcore Liberty 4">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name"><a href="https://www.soundcore.com/products/a3948" target="_blank" rel="noopener">Soundcore</a></h3>
+            <p class="product-description">Liberty 4 NC, Wireless Noise Cancelling Earbuds, LDAC, Hi-Res Audio</p>
+            <p class="product-price">4,500 EGP</p>
+            <p class="price">5,200 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="https://m.media-amazon.com/images/I/71o8Q5XJS5L._AC_SX450_.jpg" alt="Sony Headphones">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name"><a href="https://www.sony.com/en/articles/wh-1000xm5" target="_blank" rel="noopener">Sony</a></h3>
+            <p class="product-description">WH-1000XM5 Wireless Industry-Leading Noise Canceling Headphones, Black</p>
+            <p class="product-price">18,500 EGP</p>
+            <p class="price">21,000 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="https://m.media-amazon.com/images/I/61qM3ij-NlL._AC_SX450_.jpg" alt="Soundcore Life P3">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name"><a href="https://www.soundcore.com/products/a3939" target="_blank" rel="noopener">Soundcore</a></h3>
+            <p class="product-description">Life P3 Noise Cancelling Earbuds, Thumping Bass, 35H Playtime, Sky Blue</p>
+            <p class="product-price">3,200 EGP</p>
+            <p class="price">3,800 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-watch-ultra-2-1.jpg" alt="Apple Watch Ultra">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name"><a href="https://www.apple.com/apple-watch-ultra-2/" target="_blank" rel="noopener">Apple</a></h3>
+            <p class="product-description">Watch Ultra 2 [GPS + Cellular], 49mm Titanium Case, Black Ocean Band</p>
+            <p class="product-price">22,000 EGP</p>
+            <p class="price">26,500 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="https://m.media-amazon.com/images/I/71KE3t+EJdL._AC_SX450_.jpg" alt="HyperX Gaming Headset">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name"><a href="https://hyperx.com/products/hyperx-cloud-ii-gaming-headset" target="_blank" rel="noopener">HyperX</a></h3>
+            <p class="product-description">Cloud II Gaming Headset, 7.1 Virtual Surround Sound, Red/Black</p>
+            <p class="product-price">4,800 EGP</p>
+            <p class="price">5,500 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="https://m.media-amazon.com/images/I/61KcCmAHZ0L._AC_SX450_.jpg" alt="Soundcore Sport X10">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name"><a href="https://www.soundcore.com/products/a3961" target="_blank" rel="noopener">Soundcore</a></h3>
+            <p class="product-description">Sport X10 Workout Earbuds, Rotatable Over-Ear Hooks, Waterproof IPX7</p>
+            <p class="product-price">2,950 EGP</p>
+            <p class="price">3,400 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+</div>
+
+    <div class="h2">
+        <h1>Laptops & Printers</h1>
+    </div>
+<div class="row">
+    <div class="container">
+        <div class="product-image">
+            <img src="https://fdn2.gsmarena.com/vv/bigpic/lenovo-loq-15irh8.jpg" alt="Lenovo LOQ">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name"><a href="https://www.lenovo.com/us/en/c/loq-laptops/" target="_blank" rel="noopener">Lenovo LOQ</a></h3>
+            <p class="product-description">Gaming Laptop, Core i5-13450HX, 16GB RAM, 512GB SSD, RTX 4050 6GB GPU</p>
+            <p class="product-price">44,500 EGP</p>
+            <p class="price">49,000 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="https://fdn2.gsmarena.com/vv/bigpic/asus-tuf-gaming-f15-fx507.jpg" alt="ASUS TUF F15">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name"><a href="https://www.asus.com/laptops/for-gaming/tuf-gaming/asus-tuf-gaming-f15/" target="_blank" rel="noopener">ASUS TUF</a></h3>
+            <p class="product-description">TUF Gaming F15, Core i7-12700H, 16GB RAM, 512GB SSD, RTX 4060 8GB</p>
+            <p class="product-price">52,000 EGP</p>
+            <p class="price">58,500 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="https://fdn2.gsmarena.com/vv/bigpic/lenovo-legion-slim-5-16irh8.jpg" alt="Lenovo Legion 5">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name"><a href="https://www.lenovo.com/us/en/c/gaming/legion/" target="_blank" rel="noopener">Lenovo Legion</a></h3>
+            <p class="product-description">Legion 5 Slim, Ryzen 7 7840HS, 16GB RAM, 512GB SSD, RTX 4060 8GB GPU</p>
+            <p class="product-price">62,000 EGP</p>
+            <p class="price">68,000 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="https://fdn2.gsmarena.com/vv/bigpic/asus-rog-strix-g16-g614.jpg" alt="ASUS ROG Strix">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name"><a href="https://rog.asus.com/laptops/rog-strix/rog-strix-g16-2024/" target="_blank" rel="noopener">ASUS ROG</a></h3>
+            <p class="product-description">ROG Strix G16, Core i7-13650HX, 16GB RAM, 1TB SSD, RTX 4050 6GB GPU</p>
+            <p class="product-price">68,500 EGP</p>
+            <p class="price">75,000 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="https://fdn2.gsmarena.com/vv/bigpic/lenovo-loq-15irh8.jpg" alt="Lenovo LOQ Gaming">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name"><a href="https://www.lenovo.com/us/en/c/loq-laptops/" target="_blank" rel="noopener">Lenovo LOQ</a></h3>
+            <p class="product-description">Gaming Laptop, Core i7-13620H, 16GB RAM, 512GB SSD, RTX 4060 8GB GPU</p>
+            <p class="product-price">54,000 EGP</p>
+            <p class="price">61,000 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="https://fdn2.gsmarena.com/vv/bigpic/asus-tuf-gaming-a15-fa507.jpg" alt="ASUS TUF A15">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name"><a href="https://www.asus.com/laptops/for-gaming/tuf-gaming/asus-tuf-gaming-a15/" target="_blank" rel="noopener">ASUS TUF</a></h3>
+            <p class="product-description">TUF Gaming A15, Ryzen 9 7940HS, 16GB RAM, 1TB SSD, RTX 4070 8GB</p>
+            <p class="product-price">71,000 EGP</p>
+            <p class="price">79,500 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="https://fdn2.gsmarena.com/vv/bigpic/lenovo-legion-pro-5i-gen-8.jpg" alt="Lenovo Legion Pro">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name"><a href="https://www.lenovo.com/us/en/c/gaming/legion/" target="_blank" rel="noopener">Lenovo Legion</a></h3>
+            <p class="product-description">Legion Pro 5i, Core i9-14900HX, 32GB RAM, 1TB SSD, RTX 4070 8GB</p>
+            <p class="product-price">92,000 EGP</p>
+            <p class="price">105,000 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="https://fdn2.gsmarena.com/vv/bigpic/asus-rog-zephyrus-g16-ga605.jpg" alt="ASUS ROG Zephyrus">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name"><a href="https://rog.asus.com/laptops/rog-zephyrus/rog-zephyrus-g16-2024/" target="_blank" rel="noopener">ASUS ROG</a></h3>
+            <p class="product-description">ROG Zephyrus G16, Core i7-13620H, 16GB RAM, 512GB SSD, RTX 4050 6GB</p>
+            <p class="product-price">74,500 EGP</p>
+            <p class="price">82,000 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="https://m.media-amazon.com/images/I/61tiwqO6VUL._AC_SX450_.jpg" alt="HP LaserJet">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name"><a href="https://www.hp.com/us-en/shop/pdp/hp-laserjet-m15w" target="_blank" rel="noopener">HP LaserJet</a></h3>
+            <p class="product-description">M15w Mono Laser Printer, Wireless, Fast Printing, Compact Design</p>
+            <p class="product-price">9,500 EGP</p>
+            <p class="price">11,000 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="https://m.media-amazon.com/images/I/71Tyk6WkDnL._AC_SX450_.jpg" alt="HP Smart Tank">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name"><a href="https://www.hp.com/us-en/shop/pdp/hp-smart-tank-580-all-in-one-printer" target="_blank" rel="noopener">HP Smart Tank</a></h3>
+            <p class="product-description">580 All-in-One Printer, Wireless, High-Capacity Ink Tank System</p>
+            <p class="product-price">12,800 EGP</p>
+            <p class="price">14,500 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="https://m.media-amazon.com/images/I/61SZqbHloyL._AC_SX450_.jpg" alt="HP DeskJet">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name"><a href="https://www.hp.com/us-en/shop/pdp/hp-deskjet-2710e-all-in-one-printer" target="_blank" rel="noopener">HP DeskJet</a></h3>
+            <p class="product-description">2710 All-in-One Wireless Color Printer, Print, Scan & Copy</p>
+            <p class="product-price">4,200 EGP</p>
+            <p class="price">5,100 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="https://m.media-amazon.com/images/I/71oG+6b2ydL._AC_SX450_.jpg" alt="Epson EcoTank">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name"><a href="https://www.epson.com/en_US/products/printers/inkjet/epson-ecotank-et-2850/p/C11CJ61201" target="_blank" rel="noopener">Epson EcoTank</a></h3>
+            <p class="product-description">L3250 A4 Wi-Fi All-in-One Ink Tank Printer, Ultra-low-cost Printing</p>
+            <p class="product-price">13,500 EGP</p>
+            <p class="price">15,200 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="https://m.media-amazon.com/images/I/71VTrFjmCPL._AC_SX450_.jpg" alt="HP Color LaserJet">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name"><a href="https://www.hp.com/us-en/shop/pdp/hp-color-laserjet-pro-mfp-m183fw" target="_blank" rel="noopener">HP Color LaserJet</a></h3>
+            <p class="product-description">Pro M183fw Wireless All-in-One Color Printer, Professional Quality</p>
+            <p class="product-price">22,000 EGP</p>
+            <p class="price">25,500 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="https://m.media-amazon.com/images/I/71kd9rG0lEL._AC_SX450_.jpg" alt="HP LaserJet MFP">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name"><a href="https://www.hp.com/us-en/shop/pdp/hp-laserjet-pro-mfp-m428fdw" target="_blank" rel="noopener">HP LaserJet MFP</a></h3>
+            <p class="product-description">M428fdw Wireless Black & White Laser Printer, Duplex Printing</p>
+            <p class="product-price">28,500 EGP</p>
+            <p class="price">32,000 EGP</p>
+            <button class="add-btn" onclick="buy(this)">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+</div>
+
+</div>
+
+ <!-- <div class="products-container">
+    <div class="product-card">
+        <div class="product-image">
+            <img src="devphoto/d1.jpeg" alt="Product Name">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Zanussi</h3>
+           <p class="product-description">Zanussi Perla Max Fully Automatic Machine,8kg Capacity,Silver-ZWF8240SS6</p>
+            <p class="product-price">28,000 EGP</p>
+            <p class="price">32,000 EGP</p>
+            
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+ 
+    <div class="product-card">
+        <div class="product-image">
+            <img src="devphoto/d2.jpeg" alt="Product Name">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">LG Laundry</h3>
+           <p class="product-description">LG Vivace Steam Laundry 10Kg Capacity F4X5RYG24</p>
+            <p class="product-price">33,000 EGP</p>
+            <p class="price">38,000 EGP</p>
+            
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+ 
+    <div class="product-card">
+        <div class="product-image">
+            <img src="devphoto/d3.jpeg" alt="Product Name">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Refrigerator</h3>
+           <p class="product-description">Samsung Side-by-Side Refrigerator 655/604 Liter Digital with Water Dispenser Inverter RS688820B1/MR</p>
+            <p class="product-price">92,000 EGP</p>
+            <p class="price">110,000 EGP</p>
+            
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+ 
+    <div class="product-card">
+        <div class="product-image">
+            <img src="devphoto/air1.jpg" alt="Product Name">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name"></h3>
+           <p class="product-description"></p>
+            <p class="product-price">,000 EGP</p>
+            <p class="price">,000 EGP</p>
+            
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+    
+    <div class="product-card">
+        <div class="product-image">
+            <img src="devphoto/d1.jpeg" alt="Product Name">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Zanussi</h3>
+           <p class="product-description">Zanussi Perla Max Fully Automatic Machine,8kg Capacity,Silver-ZWF8240SS6</p>
+            <p class="product-price">28,000 EGP</p>
+            <p class="price">32,000 EGP</p>
+            
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+ 
+    <div class="product-card">
+        <div class="product-image">
+            <img src="devphoto/d1.jpeg" alt="Product Name">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Zanussi</h3>
+           <p class="product-description">Zanussi Perla Max Fully Automatic Machine,8kg Capacity,Silver-ZWF8240SS6</p>
+            <p class="product-price">28,000 EGP</p>
+            <p class="price">32,000 EGP</p>
+            
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+ 
+    <div class="product-card">
+        <div class="product-image">
+            <img src="devphoto/d1.jpeg" alt="Product Name">
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">Zanussi</h3>
+           <p class="product-description">Zanussi Perla Max Fully Automatic Machine,8kg Capacity,Silver-ZWF8240SS6</p>
+            <p class="product-price">28,000 EGP</p>
+            <p class="price">32,000 EGP</p>
+            
+            <button class="add-btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+ </div> -->
+
+          <!-- ── Cart trigger (floating button) ─────────────────── -->
+  <button id="cart-trigger" onclick="openCart()">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+      <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+    </svg>
+    Cart
+    <span id="cart-trigger-count">0</span>
+  </button>
+
+  <!-- ── Overlay ─────────────────────────────────────────── -->
+  <div id="cart-overlay" onclick="closeCart()"></div>
+
+  <!-- ── Drawer ──────────────────────────────────────────── -->
+  <div id="cart-drawer" role="dialog" aria-label="Shopping cart">
+    <div class="cart-drawer-header">
+      <span class="cart-drawer-title">
+        Shopping cart
+        <span class="cart-drawer-badge" id="drawer-badge">0</span>
+      </span>
+      <button class="cart-close-btn" onclick="closeCart()" aria-label="Close cart">&#x2715;</button>
+    </div>
+
+    <div class="cart-drawer-body" id="cart-body">
+      <!-- Populated by JS -->
+    </div>
+
+    <div class="cart-drawer-footer">
+      <button class="checkout-btn" id="checkout-btn" disabled onclick="handleCheckout()">
+        Proceed to checkout
+      </button>
+      <button class="continue-btn" onclick="closeCart()">Continue shopping</button>
+    </div>
+  </div>
+
+  <!-- ── Toast ───────────────────────────────────────────── -->
+  <div id="cart-toast">
+    <span class="toast-dot"></span>
+    <span id="cart-toast-msg">Added to cart</span>
+  </div>
+<script src="../js/Electrical appliances-page.js"></script>
+<script src="../js/cart-system.js"></script>
+<script src="../js/controls.js"></script><script src="auth.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GME</title>
+  <link rel="stylesheet" href="../css/Electrical appliances-style.css">
+  <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet">
+</head>
+
+<body>
+<nav id="nav">
+    <a href="index.html" class="nav-logo">GME</a>
+    
+  <ul class="nav-links">
+    <li class="nav-item-dropdown">
+      <a href="index.html" class="nav-dropdown-trigger">
+        Shops <span class="nav-caret"><i class="ri-arrow-drop-down-line"></i></span>
+      </a>
+      <ul class="nav-dropdown">
+        <li><a href="Clothes1.html">Clothes</a></li>
+        <li><a href="foodcourt.html">Food</a></li>
+        <li><a href="main-cosmetics.html">Cosmetics</a></li>
+        <li><a href="cinema.html">Entertainment</a></li>
+        <li><a href="kitchen-main.html">Kitchen</a></li>
+        <li><a href="furniture.html">Furniture</a></li>
+      </ul>
+    </li>
+    <li><a href="../html/index.html">Home</a></li>
+    <li><a href="contact-us.html">Contact us</a></li>
+  </ul>
+
+  <!--Theme control-->
+  <div class="nav-right">
+    <button class="theme-toggle" onclick="ThemeToggle()" id="themeToggle" aria-label="Toggle theme" title="Toggle light / dark mode">
+      <i class="ri-moon-fill" id="dark-mode-icon"></i>
+      <i class="ri-moon-line" id="light-mode-icon"></i>
+    </button>
+    <button class="login/register" onclick="LoginToggle()" id="login/register" title="login/register">
+      <em style="border-bottom: 2px solid var(--gold); font-style: italic;">LOGIN</em>
+    </button>
+  </div>
+</nav>
+  
+  <!-- <div class="n">
+    <div class="m">
+    <img src="images/aman.png">
+    <img src="images/CIB.png">
+    </div>
+  </div> -->
+  <!-- <div class="A">
+  <div class="B">
+    <img src="images/devices.jpeg" class="intro"/>
+    <img src="images/air condition.jpeg" class="intro "/>
+    <img src="images/summer.jpeg" class="intro "/>
+    <img src="images/TVs Banne.jpg" class="intro "/>
+  </div> -->
+  </div>
+  <section class="shop">
+    <div id="collection" class="cards">
+      
+      <div class="individual">
+        <div class="imagecard"><video autoplay muted loop playsinline><source src="..\assets\videos\appliances-videos\appliances.mp4" type="video/mp4"></video></div>
+        <div class="text">
+          <h3>Major Appliances</h3>
+          <p>Experience the power of modern technology in your kitchen.</p>
+          <a href="../html/Electrical appliances-major.html" class="shop-btn">SHOP NOW</a>
+        </div>
+      </div>
+       
+      <div class="individual">
+        <div class="imagecard"><video  autoplay muted loop playsinline><source src="..\assets\videos\appliances-videos\dev2.mp4" type="video/mp4"></video></div>
+        <div class="text">
+          <h3>Small Appliances</h3>
+          <p>Elegance and efficiency in every small details of your home.</p>
+          <a href="../html/Electrical appliances-small.html" class="shop-btn">SHOP NOW</a>
+        </div>
+      </div>
+       
+      <div class="individual">
+        <div class="imagecard"><video autoplay muted loop playsinline><source src="..\assets\videos\appliances-videos\dev1.mp4" type="video/mp4"></video></div>
+        <div class="text">
+          <h3>Digital Devices</h3>
+          <p>Smart technology designed to make your daily life easier.</p>
+          <a href="../html/Electrical appliances-digital.html" class="shop-btn">SHOP NOW</a>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+  <script src="../js/Electrical appliances-page.js"></script><script src="auth.js"></script>
+  <script src="../js/controls.js"></script>
+</body>
+
+</html>
