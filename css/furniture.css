@@ -313,14 +313,14 @@ nav.scrolled {
 
         .nav2 {
             top: 0;
-            background: var(--fg);
+            background: var(--bg2);
             padding: 15px 0;
             text-align: center;
             z-index: 1000;
         }
  
         .nav2 a {
-            color: var(--bg);
+            color: var(--gold);
             text-decoration: none;
             margin: 0 15px;
             font-size: 0.8rem;
