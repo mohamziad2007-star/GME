@@ -358,6 +358,7 @@ img {
   min-height: 50%;
 }
 .cards {
+
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -536,7 +537,7 @@ img {
 
 .product-image img {
     width: 100%;
-    height: auto;
+    height: 230px;
     object-fit: contain;
     padding: 5px;
 }
