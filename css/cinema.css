@@ -104,12 +104,10 @@ nav {
   background: linear-gradient(to bottom, var(--nav-from), transparent);
   transition: background .4s, border-color .4s;
 }
-/* Dropdown container */
 .nav-item-dropdown {
   position: relative;
 }
 
-/* Caret icon */
 .nav-caret {
   display: inline-block;
   font-size: 1rem;
@@ -123,7 +121,6 @@ nav {
   transform: rotate(180deg);
 }
 
-/* Dropdown panel */
 .nav-dropdown {
   display: block;
   visibility: hidden;
@@ -139,7 +136,6 @@ nav {
   transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s;
 }
 
-/* Visible panel card */
 .nav-dropdown::after {
   content: '';
   position: absolute;
@@ -154,7 +150,6 @@ nav {
   z-index: -1;
 }
 
-/* Small arrow pointing up */
 .nav-dropdown::before {
   content: '';
   position: absolute;
@@ -167,7 +162,6 @@ nav {
   z-index: 1;
 }
 
-/* Show on hover */
 .nav-item-dropdown:hover .nav-dropdown {
   visibility: visible;
   opacity: 1;
@@ -175,7 +169,6 @@ nav {
   transform: translateX(-50%) translateY(0);
 }
 
-/* Dropdown items */
 .nav-dropdown li {
   position: relative;
   z-index: 2;
@@ -326,9 +319,9 @@ nav.scrolled {
 }
 .movie-card .photo img
 {
-    width: 230px; /* مقاس ثابت للعرض */
-    height: 295px; /*مقاس ثابت للطول */
-    object-fit: cover; /* لعدم تكدس الصوره*/
+    width: 230px; 
+    height: 295px; 
+    object-fit: cover; 
     border-radius: 4px;
 }
 .showtimes {
@@ -337,7 +330,7 @@ nav.scrolled {
     text-align: center;
 }
 .details {
-    flex: 1; /* يأخذ باقي المساحة المتاحة */
+    flex: 1;
     padding: 0 20px;
 }
 .format-label {
@@ -424,7 +417,6 @@ a{
 }
 
 
-    /* ── Container ── */
     .wrap {
         border: 2px solid var(--gold);
     top: 50%;

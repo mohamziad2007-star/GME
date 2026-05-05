@@ -15,7 +15,6 @@ function closeCart() {
 function buy(btn) {
     let container = btn.closest(".perfume-card") || btn.closest(".container") || btn.closest(".product-card");
 
-    // Extract name: try h3 first, fall back to image filename
     let nameEl = container.querySelector("h3");
     let name;
     if (nameEl) {
@@ -28,15 +27,12 @@ function buy(btn) {
 
     let img = container.querySelector("img").src;
 
-    // Clean price text (removes letters/symbols, keeps digits)
     let priceText = container.querySelector(".price").innerText;
     let price = parseInt(priceText.replace(/\D/g, ""));
 
-    // Handle size: use dropdown if it exists
     let sizeElement = container.querySelector(".proud-size");
     let size = sizeElement ? sizeElement.value : "Standard";
 
-    // Handle Stock/Inventory Logic
     let countElement = container.querySelector('.min-js');
     if (countElement) {
         let num = parseInt(countElement.innerText);
@@ -55,7 +51,6 @@ function buy(btn) {
     showToast("Added " + name + " to cart");
 }
 
-// UPDATE CART UI — single definition, no duplicate
 function updateCartUI() {
     let cartBody = document.getElementById("cart-body");
     let count = document.getElementById("cart-trigger-count");
@@ -77,13 +72,11 @@ function updateCartUI() {
     checkoutBtn.disabled = (cart.length === 0);
 }
 
-// REMOVE ITEM
 function removeItem(index) {
     cart.splice(index, 1);
     updateCartUI();
 }
 
-// TOAST
 function showToast(msg) {
     let toast = document.getElementById("cart-toast");
     let text = document.getElementById("cart-toast-msg");
