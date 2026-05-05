@@ -103,3 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     applyLoginState();
 });
+// Back button
+function BackToggle() {
+    window.history.back();
+}
