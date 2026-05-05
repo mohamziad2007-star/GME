@@ -1,6 +1,5 @@
 let cart = [];
 
-// OPEN / CLOSE CART
 function openCart() {
     document.getElementById("cart-drawer").classList.add("open");
     document.getElementById("cart-overlay").classList.add("open");

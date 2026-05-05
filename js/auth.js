@@ -1,4 +1,3 @@
-// ─── AUTH.JS — include on every page ───────────────────────────────────────
 
 function LoginToggle() {
     const overlay = document.getElementById('login-overlay');
@@ -63,15 +62,14 @@ function HandleSubmit() {
     }
 
     LoginCancel();
-    applyLoginState();   // update the button immediately after login
+    applyLoginState();  
 }
 
 function Logout() {
     localStorage.removeItem('loggedInEmail');
-    applyLoginState();   // revert button without a full reload
+    applyLoginState();   
 }
 
-// ─── Called on every page load ─────────────────────────────────────────────
 function applyLoginState() {
     const email = localStorage.getItem('loggedInEmail');
     const btn   = document.getElementById('login/register');
@@ -91,16 +89,13 @@ function applyLoginState() {
     }
 }
 
-// Run as soon as this script loads on any page
 document.addEventListener('DOMContentLoaded', () => {
-    // Hide register fields by default if the modal exists on this page
     const registerField = document.getElementById('register-field');
     if (registerField) registerField.style.display = 'none';
 
     applyLoginState();
 });
 
-// Expose everything globally (needed if called from inline onclick attributes)
 window.LoginToggle         = LoginToggle;
 window.LoginCancel         = LoginCancel;
 window.ShowPassword        = ShowPassword;
