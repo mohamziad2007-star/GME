@@ -107,3 +107,8 @@ document.addEventListener('DOMContentLoaded', () => {
 function BackToggle() {
     window.history.back();
 }
+
+function Booked(){
+    alert("Successfuly booked ;)");
+    window.history.back();
+}

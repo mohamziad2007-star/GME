@@ -394,7 +394,33 @@ nav.scrolled {
     text-align: center;
     box-shadow: 0 4px 8px var(--gold-dim);
 }
+.back-btn{
+  position: relative;
+  margin-left: 100px;
+  margin-bottom: 20px;
+  padding: 10px 30px;
+  font-size: 40px;
+  border: 2px solid var(--gold);
+  border-radius: 20px;
+  cursor: pointer;
+  color: var(--gold);
+  background: var(--bg);
+  transition: .3s ease;
+}
+.back-btn:hover{  background: var(--gold);
+  color: var(--bg);}
+.back-btn i{
+  display: inline-block;
+  position: relative;
+  transition: .3s ease;
+  transform: rotate(180deg);
+  padding: 10px 20px;
 
+}
+
+.back-btn i:hover{
+  transform: rotate(0deg);
+}
 /* صورة المنتج جوه الكارت */
 .product-image {
     width: 100%;
