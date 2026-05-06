@@ -5,6 +5,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
         <link rel="stylesheet" href="../css/Clothes.css">
         <link rel="stylesheet" href="../css/main-cart.css">
+        <link rel="stylesheet" href="../css/login.css">
+
         <link
         href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
         rel="stylesheet">
@@ -872,7 +874,52 @@
     <span class="toast-dot"></span>
     <span id="cart-toast-msg">Added to cart</span>
   </div>
+  <!--The Login layout-->
+<div class="login-overlay" id="login-overlay">
+  <div class="modal">
+    <button class="modal-close" onclick="LoginCancel()">X</button>
+    
+    <div class="avatar">
+      <i class="ri-user-3-line"></i>
+      <i class="ri-user-3-fill"></i>
+    </div>
+    <br><em></em>
+    <h2>Welcome !</h2>
+    <p class="modal-tag">GLOBAL MALL OF EGYPT</p>
 
+    <div class="tab-switcher">
+      <button class="tab-btn active" id="tab-login" onclick="SwitchTab('login')">LOGIN</button>
+      <button class="tab-btn" id="tab-register" onclick="SwitchTab('register')">REGISTER</button>
+    </div>
+
+    <div class="input-group">
+      <label>Email</label>
+      <input type="email" id="email-input" placeholder="you@example.com">
+    </div>
+
+    <div class="input-group">
+      <label>Password</label>
+      <input type="password" id="password-input" placeholder="*******">
+      <button class="show-password" onclick="ShowPassword()">
+        <i class="ri-eye-line"></i>
+      </button>
+    </div>
+
+    <div class="forget" id="forget-link"><a href="#">Forgot password</a></div>
+
+    <div id="register-field">
+      <div class="input-group">
+        <label>Full name</label>
+        <input type="text" id="name-input" placeholder="your name">
+      </div>
+      <div class="input-group">
+        <label>Confirm password</label>
+        <input type="password" placeholder="*******" id="confirm-password-input">
+        <button class="show-password" onclick="ShowConfirmPassword()">
+          <i class="ri-eye-line"></i>
+        </button>
+      </div>
+    </div>
 <script src="../js/controls.js"></script>
 <script src="../js/cart-system.js"></script>
 <script src="../js/auth.js"></script>

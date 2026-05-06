@@ -3,6 +3,8 @@
     <head>
         <title>GME | Clothing</title>
         <link rel="stylesheet" href="../css/Clothes.css">
+        <link rel="stylesheet" href="../css/login.css">
+
         <link
         href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
         rel="stylesheet">
@@ -47,6 +49,52 @@
             <a href="Clothes2.html" class="link-img"><img src="..\assets\images\clothes-images\male2.jpeg" alt="Men's Collection"></a>
             <a href="Clothes3.html" class="link-img"><img src="..\assets\images\clothes-images\female3.jpg" alt="Women's Collection"></a>
         </div>
+  <!--The Login layout-->
+<div class="login-overlay" id="login-overlay">
+  <div class="modal">
+    <button class="modal-close" onclick="LoginCancel()">X</button>
+    
+    <div class="avatar">
+      <i class="ri-user-3-line"></i>
+      <i class="ri-user-3-fill"></i>
+    </div>
+    <br><em></em>
+    <h2>Welcome !</h2>
+    <p class="modal-tag">GLOBAL MALL OF EGYPT</p>
+
+    <div class="tab-switcher">
+      <button class="tab-btn active" id="tab-login" onclick="SwitchTab('login')">LOGIN</button>
+      <button class="tab-btn" id="tab-register" onclick="SwitchTab('register')">REGISTER</button>
+    </div>
+
+    <div class="input-group">
+      <label>Email</label>
+      <input type="email" id="email-input" placeholder="you@example.com">
+    </div>
+
+    <div class="input-group">
+      <label>Password</label>
+      <input type="password" id="password-input" placeholder="*******">
+      <button class="show-password" onclick="ShowPassword()">
+        <i class="ri-eye-line"></i>
+      </button>
+    </div>
+
+    <div class="forget" id="forget-link"><a href="#">Forgot password</a></div>
+
+    <div id="register-field">
+      <div class="input-group">
+        <label>Full name</label>
+        <input type="text" id="name-input" placeholder="your name">
+      </div>
+      <div class="input-group">
+        <label>Confirm password</label>
+        <input type="password" placeholder="*******" id="confirm-password-input">
+        <button class="show-password" onclick="ShowConfirmPassword()">
+          <i class="ri-eye-line"></i>
+        </button>
+      </div>
+    </div>
         <script src="../js/controls.js"></script><script src="../js/auth.js"></script>
     </body>
 </html>
