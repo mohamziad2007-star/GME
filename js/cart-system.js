@@ -10,7 +10,7 @@ function closeCart() {
     document.getElementById("cart-overlay").classList.remove("open");
 }
 
-// ADD TO CART
+
 function buy(btn) {
     let container = btn.closest(".perfume-card") || btn.closest(".container") || btn.closest(".product-card");
 
@@ -18,7 +18,8 @@ function buy(btn) {
     let name;
     if (nameEl) {
         name = nameEl.innerText;
-    } else {
+    } 
+    else {
         let imgSrc = container.querySelector("img").src;
         let filename = imgSrc.split(/[\\/]/).pop().replace(/\.[^.]+$/, "");
         name = "Item #" + filename;
@@ -80,7 +81,7 @@ function showToast(msg) {
     let toast = document.getElementById("cart-toast");
     let text = document.getElementById("cart-toast-msg");
     text.innerText = msg;
-    toast.classList.add("show");
+    toast.classList.add("show"); 
     setTimeout(function() {
         toast.classList.remove("show");
     }, 2000);

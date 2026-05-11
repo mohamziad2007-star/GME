@@ -1,6 +1,6 @@
 const html = document.documentElement;
 const savedTheme = localStorage.getItem('theme');
-if (savedTheme) html.setAttribute('data-theme', savedTheme);
+if (savedTheme) html.setAttribute('data-theme',  );
 
 function ThemeToggle() {
     const currentTheme = html.getAttribute('data-theme');
@@ -14,6 +14,7 @@ function ThemeToggle() {
 }
 
 const header = document.querySelector('nav');
+
 window.addEventListener('scroll', () => {
     header.classList.toggle('scrolled', window.scrollY > 50);
 });
@@ -55,6 +56,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const email    = document.getElementById('email-input').value.trim();
         const password = document.getElementById('password-input').value;
 
+        if(password < 6){alert('Password needs to be more than six characters'); return}
+
         if (!email || !password) { alert('Please fill in all fields.'); return; }
 
         if (currentTab === 'register') {
@@ -70,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const storedPass = localStorage.getItem('user_' + email + '_password');
             if (!storedPass)             { alert('No account found. Please register first.'); return; }
             if (storedPass !== password) { alert('Incorrect password.');                      return; }
-            localStorage.setItem('loggedInEmail', email);
+            localStorage.setItem('loggedInEmail', email);   
         }
 
         LoginCancel();
