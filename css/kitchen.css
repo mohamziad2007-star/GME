@@ -106,7 +106,7 @@ nav {
   top: 100%;
   left: 50%;
   transform: translateX(-50%) translateY(-4px);
-  padding-top: 16px; /* bridges the gap — no dead zone */
+  padding-top: 16px; 
   list-style: none;
   min-width: 160px;
   transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s;

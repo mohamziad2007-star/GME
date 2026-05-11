@@ -65,7 +65,7 @@
       transition: background 0.45s ease, color 0.45s ease;
     }
 
-    /* ── Cart trigger button (floating) ────────────────── */
+    
     #cart-trigger {
       position: fixed;
       bottom: 2rem;
@@ -104,7 +104,7 @@
       transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
     }
 
-    /* ── Cart overlay ───────────────────────────────────── */
+
     #cart-overlay {
       position: fixed;
       inset: 0;
@@ -120,7 +120,6 @@
       pointer-events: all;
     }
 
-    /* ── Cart drawer ────────────────────────────────────── */
     #cart-drawer {
       position: fixed;
       top: 0;
@@ -141,7 +140,6 @@
       transform: translateX(0);
     }
 
-    /* ── Drawer header ──────────────────────────────────── */
     .cart-drawer-header {
       display: flex;
       align-items: center;
@@ -193,7 +191,6 @@
       color: var(--gold);
     }
 
-    /* ── Drawer body ────────────────────────────────────── */
     .cart-drawer-body {
       flex: 1;
       overflow-y: auto;
@@ -223,7 +220,6 @@
       line-height: 1.5;
     }
 
-    /* ── Cart item ──────────────────────────────────────── */
     .cart-item {
       display: flex;
       align-items: center;
@@ -345,7 +341,7 @@
       background: rgba(224, 85, 85, 0.1);
     }
 
-    /* ── Order summary ──────────────────────────────────── */
+  
     .order-summary {
       background: var(--bg3);
       border: 1px solid var(--border);
@@ -380,7 +376,6 @@
 
     .summary-total span:last-child { color: var(--gold); }
 
-    /* ── Drawer footer ──────────────────────────────────── */
     .cart-drawer-footer {
       padding: 1.25rem 1.5rem;
       border-top: 1px solid var(--border);
@@ -432,7 +427,6 @@
       color: var(--gold);
     }
 
-    /* ── Toast notification ─────────────────────────────── */
     #cart-toast {
       position: fixed;
       bottom: 5.5rem;
@@ -470,7 +464,6 @@
       flex-shrink: 0;
     }
 
-    /* ── "Add to cart" button style (reusable class) ────── */
     .btn-add-to-cart {
       display: inline-flex;
       align-items: center;
@@ -497,7 +490,6 @@
       border-color: var(--gold);
     }
 
-    /* ── Page demo scaffold (remove in your project) ────── */
     .page-demo {
       max-width: 900px;
       margin: 0 auto;
@@ -563,8 +555,6 @@
       color: var(--gold);
       margin-bottom: 8px;
     }
-
-    /* Theme toggle */
     #theme-toggle {
       position: fixed;
       top: 1.25rem;

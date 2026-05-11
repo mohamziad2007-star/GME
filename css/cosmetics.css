@@ -460,7 +460,7 @@ body {
   font-weight: bold;
 }
 
-/* Semantic gender colors — kept intentionally */
+
 .women .gender-label { background: #ffe4e1; color: #d87093; }
 .men .gender-label   { background: #e0f2ff; color: #007acc; }
 
