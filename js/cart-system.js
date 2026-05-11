@@ -33,6 +33,7 @@ function buy(btn) {
     let sizeElement = container.querySelector(".proud-size");
     let size = sizeElement ? sizeElement.value : "Standard";
 
+
     let countElement = container.querySelector('.min-js');
     if (countElement) {
         let num = parseInt(countElement.innerText);
