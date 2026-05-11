@@ -56,13 +56,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const email    = document.getElementById('email-input').value.trim();
         const password = document.getElementById('password-input').value;
 
-        if(password < 6){alert('Password needs to be more than six characters'); return}
-
         if (!email || !password) { alert('Please fill in all fields.'); return; }
 
         if (currentTab === 'register') {
             const name    = document.getElementById('name-input').value.trim();
             const confirm = document.getElementById('confirm-password-input').value;
+             if(password < 6){alert('Password needs to be more than six characters'); return}
             if (!name)                { alert('Please enter your full name.');                      return; }
             if (password !== confirm) { alert('Passwords do not match.');                           return; }
             if (localStorage.getItem('user_' + email + '_password')) { alert('Email already exists.'); return; }
@@ -72,6 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             const storedPass = localStorage.getItem('user_' + email + '_password');
             if (!storedPass)             { alert('No account found. Please register first.'); return; }
+             if(password < 6){alert('Password needs to be more than six characters'); return}
             if (storedPass !== password) { alert('Incorrect password.');                      return; }
             localStorage.setItem('loggedInEmail', email);   
         }
