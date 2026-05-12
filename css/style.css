@@ -345,45 +345,6 @@ nav.scrolled {
   animation: fadeUp .7s .85s ease forwards;
 }
 
-.hero-btns {
-  margin-top: 44px;
-  display: flex;
-  gap: 16px;
-  justify-content: center;
-  opacity: 0;
-  animation: fadeUp .7s 1s ease forwards;
-}
-
-.btn-primary {
-  background: var(--gold);
-  color: #0e0e0e;
-  padding: 16px 44px;
-  border: none;
-  cursor: pointer;
-  font-family: 'DM Sans', sans-serif;
-  font-size: .8rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  transition: background .3s, transform .2s;
-}
-
-.btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); }
-
-.btn-outline {
-  background: transparent;
-  color: #fff;
-  padding: 16px 44px;
-  border: 1px solid rgba(255,255,255,.35);
-  cursor: pointer;
-  font-family: 'DM Sans', sans-serif;
-  font-size: .8rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  transition: border-color .3s, color .3s, transform .2s;
-}
-
-.btn-outline:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-2px); }
-
 @keyframes scrollPulse {
   0%,100% { opacity: .4; transform: scaleY(.8); }
   50%      { opacity: 1;  transform: scaleY(1); }
